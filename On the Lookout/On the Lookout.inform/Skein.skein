@@ -15,10 +15,10 @@
   </item>
   <item nodeId="node-2">
     <command xml:space="preserve">take frizza</command>
-    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-3"/>

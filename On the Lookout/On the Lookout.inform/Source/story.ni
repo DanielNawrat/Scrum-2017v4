@@ -1228,7 +1228,7 @@ When play begins:
 
 [Image Testsection]
 
-[Include Simple Graphical Window by Emily Short.
+Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
@@ -1236,7 +1236,7 @@ Include Location Images by Emily Short.
 	Figure of Upper Desert_Frizza is the file "Surface.png".
 	
 	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
-	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.]
+	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
 	
 [--]
 
