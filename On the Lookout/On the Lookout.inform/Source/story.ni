@@ -1089,10 +1089,14 @@ Instead of going nowhere from the Bloo City_Frizza, say "Daunting planes and dar
 The Orbit_Frizza is above the Landing Zone_Frizza. The printed name of Orbit_Frizza is "Orbit".
 	Instead of going to the Orbit_Frizza, do nothing.
 	
-The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux." 
+The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there." 
 
 After going from the Landing Zone_Frizza:
-		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux.";
+	if Dunia is in the Ascent_Frizza:
+		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there.";
+		produce a room description with going spacing conventions;
+	else:
+		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. ";
 		produce a room description with going spacing conventions.
 	Instead of going to the Tunnels_Frizza from the Landing Zone_Frizza, say "After looking around a bit you disover a fairly well hidden hatch. It seems to be open at the moment."
 
@@ -1224,7 +1228,7 @@ When play begins:
 
 [Image Testsection]
 
-Include Simple Graphical Window by Emily Short.
+[Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
@@ -1232,7 +1236,7 @@ Include Location Images by Emily Short.
 	Figure of Upper Desert_Frizza is the file "Surface.png".
 	
 	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
-	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
+	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.]
 	
 [--]
 
@@ -1268,7 +1272,7 @@ After examining Dunia for the first time:
 After answering Dunia that "Axesto":
 	 if Dunia is in the Ascent_Frizza:
 		if BlooSympathy is true:
-			say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Techies [roman type]or of the [bold type]Duju[roman type]?";
+			say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?";
 		else:
 			say "[italic type]Begone with you! I don't want anything to do with that!"
 
@@ -1645,13 +1649,13 @@ Instead of inserting a thing into the Power Unit:
 
 
 After inserting the Pure Flux Essence into the Power Unit:
-	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break][bold type]Chapter 5 - Kaldriss[roman type][paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
+	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove the Pure Flux Essence from play.
 	[now the player is in the Spaceship Bridge_Kaldríss.]
 	
 
 After inserting the Power Cell into the Power Unit:
-	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break][bold type]Chapter 5 - Kaldriss[roman type][paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
+	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	[remove the Power Cell from play;
 	now the player is in the Spaceship Bridge_Kaldríss.]
 	
@@ -1662,7 +1666,7 @@ After answering Dunia that "Techies" for the first time:
 		say "[italic type]Then begone with you! I don't want anything to do with that!";
 		now BlooSympathy is false.
 	
-The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux."
+The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux. He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him."
 
 A person can be friendly or neutral. Trapist is neutral. A person can be unasked or asked. Trapist is unasked.
 A Power Cell is in the Control Tower_Frizza. The description of the Power Cell is "Two solid columns of dark metal, welded together and supplied with little blue lines that indicate their power level. They're beastly heavy. On their backside you see the words [italic type]Fluxus Corp[roman type] impressed into the metal."
@@ -1675,7 +1679,7 @@ After approaching the Cabin:
 	now the description of the Cabin is "A small hut in which Trapist is working. There are heaps of paperwork, the faint glow of a light bulb and Trapist sitting in the midst of it, his face illuminated by his bluishly burning cigarette."
 	
 After answering Trapist that "Axesto" for the first time:
-	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.";
+	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.[paragraph break][roman type]He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him.";
 	now Trapist is asked;
 	now Trapist is friendly.
 
@@ -1721,7 +1725,24 @@ After asking Trapist about "Discharged Spaceship":
 	else:
 		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 		
-
+After asking Trapist about "Spaceship":
+	if Trapist is friendly:
+		if ConcealedDunia is true:
+			say "[italic type]Y'are in quite a pickle, eh? Mhh... Tell ya something: come back later a bit. I'll see what I can do. If we do have one thing, it's energy.";
+		else if ConcealedDunia is false:			
+			if BlooSympathy is true:
+				say "[italic type]Yeah, I might soon have something for ya. One thing tough ... ya look like Flux, not the Techie type, but rather blue, one gets a sense for that after staying on that planet longer than healthy. My advice: don't get too close with the Duju. It's not that I will judge ya, but the others will judge me for giving anything to ya.";
+			else if the player wears the Sinkan Cloak:
+				say "[italic type]Now that's a surprise. Listen, you better get rid of that cloak of yours. Everybody here knows what that is and who it is that wears it. That fuel you look for, I guess that has to wait now, folk would talk about me giving a cloak-wearer our gear. Look out for yaself.";
+				now Trapist is neutral;
+			else if BlooSympathy is false:
+				if the Power Cell is in the Control Tower_Frizza:
+					say "[italic type]Mate! I've got somethin' for ya. Catch![paragraph break][roman type]Trapist produces something that looks like two columns of dark metal, welded together on their long end. He leisurely throws it in your direction, you rush to catch it and are crushed by their weight.[paragraph break][italic type]That stuff kicks your cute spaceship through whole galaxies, if you let it. We fuel dozens of these each and every day for gear that would take your dinghy pickaback. Now no need to get emotional, I'm glad for everyone who leaves these lands all in one piece.[paragraph break][roman type]You receive a [bold type]Power Cell[roman type].";
+					now the player has the Power Cell;
+				else:
+					say "[italic type]That thingy should power ya vessel through all that comes. I'm glad for everyone who leaves these lands all in one piece.";
+	else:
+		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 
 
 [

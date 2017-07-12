@@ -2,11 +2,11 @@
 <ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
     <story>
         <identification>
-<<<<<<< HEAD
-            <ifid>48668A33-6594-4EE5-8FD0-5A7BF0C18BBD</ifid>
-=======
-            <ifid>FFED34A6-CAB9-4249-AC75-C70D79C4636F</ifid>
->>>>>>> 732829259e42640c4b499cfd85e1367a96b8e019
+            <ifid><<<<<<< HEAD
+            48668A33-6594-4EE5-8FD0-5A7BF0C18BBD
+            =======
+            FFED34A6-CAB9-4249-AC75-C70D79C4636F
+            >>>>>>> 732829259E42640C4B499CFD</ifid>
             <format>glulx</format>
         </identification>
         <bibliographic>
