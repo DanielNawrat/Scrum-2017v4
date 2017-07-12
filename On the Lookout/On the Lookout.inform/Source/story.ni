@@ -4,8 +4,8 @@
 
 The Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are rooms. Anchors is a region. Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are in the Anchors.
 Anchor 1 is east of Tree Thicket_Sitis and west of Jungle_6.
-Anchor 2 is east of Jungle_8 and west of Landing Zone_Geysiria.
-Anchor 3 is east of Cave_Geysiria and west of Surface Flux_Frizza.
+Anchor 2 is east of Jungle_7 and west of the Spaceship Bridge_Geysiria.
+Anchor 3 is east of Volcano and west of Surface Flux_Frizza.
 Anchor 4 is east of the Ascent_Frizza and west of the Spaceship Exit_Kaldríss.
 
 The player is in the Flat Rock_Sitis.
