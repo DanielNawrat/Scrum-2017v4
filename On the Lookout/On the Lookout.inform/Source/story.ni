@@ -1228,7 +1228,7 @@ When play begins:
 
 [Image Testsection]
 
-Include Simple Graphical Window by Emily Short.
+[Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
@@ -1236,7 +1236,7 @@ Include Location Images by Emily Short.
 	Figure of Upper Desert_Frizza is the file "Surface.png".
 	
 	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
-	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
+	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.]
 	
 [--]
 
@@ -1341,14 +1341,14 @@ Instead of taking the gun for the second time:
 The console is unexamined.
 
 Before examining the console for the first time:
-	now the description of the console is "A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. [paragraph break]As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.[paragraph break]Anyhow, you could [bold type]examine[roman type] the console further."
+	now the description of the console is "A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. [paragraph break]As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.[paragraph break]Anyhow, you could [bold type]examine[roman type] the console further. Of course, you could also [bold type]wait [roman type] a little longer."
 
 Before examining the console for the second time:
-	now the description of the console is "After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... [paragraph break]As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could [bold type]examine[roman type] it further."
+	now the description of the console is "After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... [paragraph break]As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could [bold type]examine[roman type] it further. Of course, you could also [bold type]wait [roman type] a little longer."
 
 Before examining the console for the third time:
 	if the console is unexamined:
-		now the description of the console is "Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you await Dunia and Du'un to set you free.";
+		now the description of the console is "Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you should [bold type]wait[roman type] Dunia and Du'un to set you free.";
 	else:
 		now the description of the console is "You can't make out anything new, the Operators are ridiculously shy."
 	
@@ -1359,7 +1359,7 @@ After examining the console for the third time:
 Before doing something other than waiting in the Upper Gate_Frizza:
 	if Dunia is in the Lower Gate_Frizza:
 		if Helplesness is true:
-			say "In your present condition, that's hardly possible.";
+			say "In your present condition, that's hardly possible. All you can do right now is [bold type]wait[roman type].";
 			stop the action.
 [--]
 
@@ -1378,14 +1378,14 @@ A Flux Extractor is a container in the Lower Gate_Frizza. The description of the
 
 After waiting in the Upper Gate_Frizza for the first time:
 	if Helplesness is false:
-		say "You stand still where you were left. Time passes. However, that seems to be the only thing to change.";
+		say "You stand still where you were left. Time passes. However, that seems to be the only thing to change. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return.";
 	else:
-		say "You lie, waiting, contemplating your choices."
+		say "You lie, waiting, contemplating your choices. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return."
 After waiting in the Upper Gate_Frizza for the second time:
 	if Helplesness is false:
-		say "You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console.";
+		say "You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return.";
 	else:
-		say "Still you lie, your eyes fixed in position due to the fact that your head is fixed as well.  As if that wasn't enough, your punishers turned you to a rather unexciting corner of the room."		
+		say "Still you lie, your eyes fixed in position due to the fact that your head is fixed as well.  As if that wasn't enough, your punishers turned you to a rather unexciting corner of the room. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return."		
 After waiting in the Upper Gate_Frizza for the third time:
 	if the console is unexamined:
 		now Dunia is in the Upper Gate_Frizza;
