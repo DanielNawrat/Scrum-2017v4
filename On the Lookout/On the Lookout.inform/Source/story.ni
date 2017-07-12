@@ -4,8 +4,8 @@
 
 The Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are rooms. Anchors is a region. Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are in the Anchors.
 Anchor 1 is east of Tree Thicket_Sitis and west of Jungle_6.
-Anchor 2 is east of Jungle_8 and west of Landing Zone_Geysiria.
-Anchor 3 is east of Cave_Geysiria and west of Surface Flux_Frizza.
+Anchor 2 is east of Jungle_7 and west of the Spaceship Bridge_Geysiria.
+Anchor 3 is east of Volcano and west of Surface Flux_Frizza.
 Anchor 4 is east of the Ascent_Frizza and west of the Spaceship Exit_Kaldríss.
 
 The player is in the Flat Rock_Sitis.
@@ -1092,32 +1092,33 @@ The Orbit_Frizza is above the Landing Zone_Frizza. The printed name of Orbit_Fri
 The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux." 
 
 After going from the Landing Zone_Frizza:
-		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions.";
+		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux.";
 		produce a room description with going spacing conventions.
 	Instead of going to the Tunnels_Frizza from the Landing Zone_Frizza, say "After looking around a bit you disover a fairly well hidden hatch. It seems to be open at the moment."
 
 [Flux]
-The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. You don't know if it's a good idea to approach it further.[paragraph break]You can go [bold type]east[roman type] and [bold type]south[roman type]."
+The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. You don't know if it's a good idea to approach it further.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop."
 	After going from the Surface Flux_Frizza:
-		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type] and [bold type]south[roman type].";
+		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop.";
 		produce a room description with going spacing conventions.
 			Instead of going to the Underground Flux_Frizza from the Surface Flux_Frizza, do nothing.
 			
-The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.[paragraph break]You can go [bold type]east[roman type]."
+The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
 	After going from the Surface Flux 2_Frizza:
-		now the description of the Surface Flux 2_Frizza is "A branch of the Flux, it emerges from under the Flux Gate to the south.[paragraph break]You can go [bold type]east[roman type].";
+		now the description of the Surface Flux 2_Frizza is "A branch of the Flux, it emerges from under the Flux Gate to the south.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 		produce a room description with going spacing conventions.
 
 [Mountain]
-The Ascent_Frizza is a room. The Ascent_Frizza is east of the Landing Zone_Frizza. The printed name of the Ascent_Frizza is "Ascent".  The description of the Ascent_Frizza is "The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding [bold type]up[roman type]. There is no clue on where it might lead, but you could find out.[paragraph break]You can go [bold type]west[roman type] and [bold type]up[roman type]."
+The Ascent_Frizza is a room. The Ascent_Frizza is east of the Landing Zone_Frizza. The printed name of the Ascent_Frizza is "Ascent".  The description of the Ascent_Frizza is "The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding [bold type]up[roman type]. There is no clue on where it might lead, but you could find out.[paragraph break]You can also go [bold type]west[roman type], back to the Landing Zone"
+
 After going from the Ascent_Frizza:
-		now the description of the Ascent_Frizza is "The foot of the mountain. [paragraph break]A narrow path leads [bold type]up[roman type]wards. You can also go [bold type]west[roman type].";
+		now the description of the Ascent_Frizza is "The foot of the mountain. [paragraph break]A narrow path leads [bold type]up[roman type]wards. You can also go [bold type]west[roman type], back to the Landing Zone.";
 		produce a room description with going spacing conventions.
 
 The Plateau_Frizza is a room. The Plateau_Frizza is above the Ascent_Frizza. The printed name of the Plateau_Frizza is "Plateau".
 Instead of going up from the Ascent_Frizza:
 	if Dunia is not in the Ascent_Frizza:
-		say "You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around.";
+		say "You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around. Maybe [bold type]looking[roman type] around would reveal whoever is hiding.";
 		now Dunia is in the Ascent_Frizza;
 	else:
 		say "You have been made clear that your ascension of the mountain is unwished for - better leave that rocky misery where you found it."
@@ -1126,22 +1127,22 @@ The Sanctuary_Frizza is a room. The Sanctuary_Frizza is east of the Plateau_Friz
 	Instead of going to the Sanctuary_Frizza from the Plateau_Frizza, say "A deep gulch separates you from the other side of the mountain. You can't possibly traverse it."
 
 [Upper Region]
-The Upper Desert_Frizza is a room. The Upper Desert_Frizza is north of the Landing Zone_Frizza. The printed name of the Upper Desert_Frizza is "Wasteland". The description of the Upper Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.[paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type]."
+The Upper Desert_Frizza is a room. The Upper Desert_Frizza is north of the Landing Zone_Frizza. The printed name of the Upper Desert_Frizza is "Wasteland". The description of the Upper Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.[paragraph break]You can go [bold type]west[roman type], to the Flux Gate, [bold type]north[roman type], to the edge of the city, and [bold type]south[roman type], back to the Landing Zone."
 After going from the Upper Desert_Frizza:
-		now the description of the Upper Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type].";
+		now the description of the Upper Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], to the Flux behind the gate, [bold type]north[roman type], to the edge of the city, and [bold type]south[roman type], back to the Landing Zone.";
 		produce a room description with going spacing conventions.
 		
-The Upper Gate_Frizza is a room. The Upper Gate_Frizza is west of the Upper Desert_Frizza. The printed name of the Upper Gate_Frizza is "Flux Gate". The description of the Upper Gate_Frizza is "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type]."
-After examining the Upper Gate_Frizza, say "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type]. [paragraph break]You can go [bold type]east[roman type]."
+The Upper Gate_Frizza is a room. The Upper Gate_Frizza is west of the Upper Desert_Frizza. The printed name of the Upper Gate_Frizza is "Flux Gate". The description of the Upper Gate_Frizza is "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
+After examining the Upper Gate_Frizza, say "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type]. [paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
 After going from the Upper Gate_Frizza:
-		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type].";
+		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland";
 		produce a room description with going spacing conventions.
 	Instead of going to the Lower Gate_Frizza from the Upper Gate_Frizza, say "They won't let you pass."
 	
 [Bloo City]
-The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type]."
+The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], to the Flux behind the gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland."
 After going from the Verge_Frizza:
-		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], [bold type]north[roman type] and [bold type]south[roman type].";
+		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], to the Flux behind the gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland.";
 		produce a room description with going spacing conventions.
 	Instead of going to the Central Plaza_Frizza from the Verge_Frizza, say "You can't even say for sure if they will speak to you before killing you. It would be unwise to approach."
 	
@@ -1153,15 +1154,15 @@ The Citadel_Frizza is north of the Central Plaza_Frizza. The printed name of the
 [Lower Region]
 The Lower Desert_Frizza is a room. The Lower Desert_Frizza is south of the Landing Zone_Frizza. The printed name of the Lower Desert_Frizza is "Wasteland". 
 	Instead of going to the Lower Tunnels_Frizza from the Lower Desert_Frizza, do nothing. 
-The description of the Lower Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger. [paragraph break]You can go [bold type]west[roman type] and [bold type]north[roman type]."
+The description of the Lower Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger. [paragraph break]You can go [bold type]west[roman type], to the Scoop, and [bold type]north[roman type], back to the Landing Zone."
 	After going from the Lower Desert_Frizza:
-		now the description of the Lower Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west [roman type]and [bold type]north[roman type].";
+		now the description of the Lower Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], to the Scoop, and [bold type]north[roman type], back to the Landing Zone.";
 		produce a room description with going spacing conventions.
 		
 The Scoop_Frizza is west of the Lower Desert_Frizza and south of the Surface Flux_Frizza. The printed name of the Scoop_Frizza is "Scoop (Settler's Base)".
-The description of the Scoop_Frizza is "You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one.[paragraph break]You can go [bold type]east [roman type] and [bold type]west[roman type]."
+The description of the Scoop_Frizza is "You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one.[paragraph break]You can go [bold type]west [roman type], to the Control Tower, [bold type]north[roman type], to the Flux before the Gate, and [bold type]east[roman type], to the Wasteland."
 After going from the Scoop_Frizza:
-	now the description of the Scoop_Frizza is "The main Flux working of the region. [paragraph break] You can go [bold type]east[roman type] and [bold type]west[roman type].";
+	now the description of the Scoop_Frizza is "The main Flux working of the region.[paragraph break]You can go [bold type]west [roman type], to the Control Tower, [bold type]north[roman type], to the Flux before the Gate, and [bold type]east[roman type], to the Wasteland.";
 	produce a room description with going spacing conventions.
 Instead of going to the Control Tower_Frizza from the Scoop_Frizza, say "There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first."
 Instead of going to the Underground Works_Frizza from the Scoop_Frizza, do nothing.
@@ -1223,7 +1224,7 @@ When play begins:
 
 [Image Testsection]
 
-[Include Simple Graphical Window by Emily Short.
+Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
@@ -1232,7 +1233,7 @@ Include Location Images by Emily Short.
 	
 	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
 	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
-	]
+	
 [--]
 
 [Variables]	
@@ -1721,7 +1722,7 @@ After asking Trapist about "Discharged Spaceship":
 		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 		
 
-	
+
 
 [
 [TO DO]

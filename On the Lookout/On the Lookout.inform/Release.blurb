@@ -1,16 +1,26 @@
 ! Blurb file created by Inform build 6M62
 
+<<<<<<< HEAD
 status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
+=======
+status "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
+>>>>>>> 732829259e42640c4b499cfd85e1367a96b8e019
 
 
 ! Identification
 
+<<<<<<< HEAD
 project folder "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform"
 release to "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Release"
+=======
+project folder "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.inform"
+release to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.materials\Release"
+>>>>>>> 732829259e42640c4b499cfd85e1367a96b8e019
 
 ! Blorb instructions
 
 storyfile leafname "On the Lookout.gblorb"
+<<<<<<< HEAD
 storyfile "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\output.ulx" include
 ifiction "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
@@ -19,6 +29,18 @@ picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 ! Placeholder variables
 
 placeholder [IFID] = "48668A33-6594-4EE5-8FD0-5A7BF0C18BBD"
+=======
+storyfile "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\output.ulx" include
+ifiction "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
+cover "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 3 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\wallhaven-94691.jpg"
+picture 4 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\Surface.png"
+
+! Placeholder variables
+
+placeholder [IFID] = "FFED34A6-CAB9-4249-AC75-C70D79C4636F"
+>>>>>>> 732829259e42640c4b499cfd85e1367a96b8e019
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2017"
 placeholder [TITLE] = "On the Lookout"
