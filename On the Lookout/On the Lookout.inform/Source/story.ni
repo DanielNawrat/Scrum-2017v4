@@ -157,14 +157,22 @@ The description of the wooden gate is "It seems to be closed. [bold type]Let's t
 
 The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "Rock Mine". The Description of the Rock Mine_Sitis is "". The Rock Mine_Sitis is east of the Wide Desert of Sitis_Sitis.
 
+Instead of going north from the Wide Desert of Sitis_Sitis:
+	say "Outch! It hurts. Apparently, you needs to feel that you are not able to pass the barbed wire fence.";
+	do nothing;
+
+Instead of going east from the Wide Desert of Sitis_Sitis:
+	say "At the moment, there's nothing that could help you out there. You need humans to go on.";
+	do nothing;
+	
 The Person behind the door_Sitis is a person. The Person behind the door_Sitis is in the Agora_Sitis. The printed name of the Person behind the door_Sitis is "the faceless guardian". 
 
 Instead of opening the wooden gate:
-	say "Someone is yelling at you. [italic type]'Who are you? And what do you want?'[roman type]";
+	say "Someone is yelling at you. [italic type]'Who are you? What is your name?'[roman type]";
 	now the Person behind the door_Sitis is in the Rampart around Sicuum_Sitis.
 	
 After answering that "Axesto":
-	say "[italic type]I am Axesto, an alien of the planet Fidatis. I landed here because I am travelling through the whole galaxy to discover the life on other plantes. During the landing here, two of my water containers broke down. That's why I need you to ask for water. Can you give me a bit, please? [roman type][paragraph break]";
+	say "[italic type]'I am Axesto, an alien of the planet Fidatis. I landed here because I am travelling through the whole galaxy to discover the life on other plantes. During the landing here, two of my water containers broke down. That's why I need you to ask for water. Can you give me a bit, please?' [roman type][paragraph break]";
 	say "First there's silence. Then the gate squeaks. [bold type]It opens slowly.[roman type]";
 	now the wooden gate is open;
 	remove the Person behind the door_Sitis from play;
@@ -172,9 +180,7 @@ After answering that "Axesto":
 	now the description of the wooden gate is "open."
 
 The Protection Bridge_Sitis is a room. The printed name of the Protection Bridge_Sitis is "The Protection Bridge". 
-The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis. [Beschreibung fehlt; nicht zwangsläufig - Beschreibung ist eigentlich im Dialog enthalten.]
-
-[Beschreibungen für andere Himmelsrichtungen?]
+The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis.
 
 
 [Region 3 - The Village Sicuum]
@@ -182,37 +188,45 @@ The Village Sicuum_Sitis is a region. The printed name of the Village Sicuum_Sit
 The Agora_Sitis, the Domum Praesidium_Sitis, the Shelter_Sitis, the Secret Passage_Sitis and Mitéra's Room_Sitis are in the Village Sicuum_Sitis. 
 
 [Räume]
-The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "You enter the wooden gate. Finally, you do not just expect other people, rather you see them. The Sitisianer, that is how they are called, looks different then you. They are taller, with longer legs and shorter necks. Also they definitely got more hair. But their faces seems to be drawn by life. You really do not know how to connect to these people without scaring them. You should [bold type]look[roman type] around for the one who has opened the gate for you."
+The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "Brisky bustle dominates this place. People are talking, buying things on the market and kids are playing with each other. No one is carrying about you. But right in the middle of this huddle, you realize a boy staring at you. He hides a bit behind one of those market booth. His view radiates a mixture of fear and fascination. Maybe you break the ice between you two, [bold type]if you friendly waves him?[roman type]"
 
-After looking in the Agora_Sitis for the first time:
-	say "You realize a boy staring at you. His name must be [bold type]Anaidis[roman type] because someone calls him [italic type]'Anaidis, catching is about running after the other ones, not staring around!' [roman type]What about [bold type]connecting to him[roman type]?";
-	now Anaidis_Sitis is in the Agora_Sitis;
-	now the description of the Agora_Sitis is "";
+Anaidis_Sitis is a person. The printed name of Anaidis_Sitis is "the hiding boy". Anaidis_Sitis is in the Agora_Sitis.
 
-	[Description muss weg!]
+Waving the hiding boy is an action applying to nothing.
+Understand "wave the hiding boy" as waving the hiding boy.
 
-After examining Anaidis_Sitis the first time:
-	say "The boy takes a step back. He radiates a mixture of fear and fascination. [italic type]'You have spoken about finding water. You will [bold type]not be successful[roman type] here.'[roman type]"
+After waving the hiding boy for the first time:
+	say "First, nothing happens. But then, he smiles. And a few seconds later, he already stands directly in front of you and babbles cheerfully. [paragraph break][italic type]'Hi, I am Anaidis. First I thought you could be an enemy, but as I finked through the keyhole, I saw how funny you look. And such a funny-looking thing could never be dangerous. But I also did not wanted to 'out me straight as the guardian'. That's why I've hidden first. Oh boy! I just can repeat: You look so so funny. With your long neck and your thick round belly. And what about your non-existing legs? You just have feet. Did you already knew you have no legs? Aaaaaaand no hair! Oh, oh! And the way you walk, or should I say waddle, is just too amusing.'[roman type][paragraph break]";
+	say "You are not quite sure how to react to this statement. The moment you want to riposte something, the boy already yells around.[paragraph break]";
+	say "[italic type]'Hey everyone! Look what we got here.[roman type]'[paragraph break]";
+	say "People suddenly crowd around you. Without any scepticism. They consider you from all aspects, persuade you in a muddle. [italic type]'What are you?, 'How did you came here?' and 'I've never seen something like you.'[roman type] You start getting nervous. Anaidis seems to see this.[paragraph break]";
+	say "[italic type]'Hey, hey. People. Stop examining him like an unknown disease. His name is Axesto. He is an alien from the planet Fidatis. Right?'[roman type][paragraph break]";
+	say "You nod.[paragraph break]";
+	say "'[italic type]As he has landed here, two of his water containers broke down. Now he needs a bit water to be able to continue his journey from planet to planet.'[roman type][paragraph break]";
+	say "It becomes more silent. [italic type]'Water, huh?'[roman type], someone out of the crowd asks. Their faces darkens. Abruptly the whole euphoria the people have had about you has been gone. Anaidis also seems thoughtful. Few seconds later, he mentions, that you are not going to be successfull here concerning your water quest. Except you will fight for it. You are confused. On the one hand it's said, you won't get water, on the other hand, apparently you can fight for it. [bold type]In generell - what's the matter about this fight. Probably, you should ask Anaidis.[roman type]";
+	now the printed name of Anaidis_Sitis is "Anaidis";
 	
-	[Description "You see nothing about..." muss weg!]
-
-
+	
+	
 [Dialogtabelle]
 
 Table of Anaidis_Sitis Responses
 Topic	Response
-"no success"	"But why not? You are all living here. A whole village. You would not survive without water. [paragraph break]"
+"the fight"	"What does that mean: I have to fight for water? Why and against whom?[paragraph break]"
 "scorpius" 	"What is going on here? Who is this Scorpius?[paragraph break]"
 
-After asking Anaidis_Sitis about "no success":
-	say "Anaidis shakes his head. [italic type]'I have never said we do not have any water here. Of course we do need water to survive. But we also need to fight for it. That's the reason we're not giving it away easily. Especially not to total strangers.[roman type][paragraph break]";
-	say "You are not quite sure how to react to Anaidis statement. He seems to see this. So he starts to smile and mentions [italic type]'Don't worry - it's less about you. It's more about our history. I know someone who could make you understanding these things. Come with me!' [roman type] Anaidis [bold type]walks west[roman type] to a huge hut. Follow him!";
-	now the printed name of Anaidis_Sitis is "Anaidis";
-	now Scorpius_Sitis is in the Agora_Sitis;
-	now Machitikos_Sitis is in the Agora_Sitis;
+After asking Anaidis_Sitis about "the fight" for the first time:
+	say "[italic type]'I know someone who is the right person to give you the right answers and does make you understand this story. Come with me!'[roman type][paragraph break]";
+	say "[bold type]Anaidis walks west to a huge hut.[roman type] Follow him!";	
 	now Anaidis_Sitis is in Mitéra's Room_Sitis;
+	now the printed name of Anaidis_Sitis is "Anaidis";
+	now the description of the Agora_Sitis is "";
 	
-Anaidis_Sitis is a person. Anaidis_Sitis is in the Shelter_Sitis. The printed name of Anaidis_Sitis is "The staring boy". 
+Instead of going east from the Agora_Sitis:
+	say "You are looking at a lovely small sand house. It looks cozy as a sand house is able to look cozy, but the moment you want to enter a young beautiful woman is blocking your way.[paragraph break]";
+	say "[italic type]'Kiddo, that's the wrong way. You really need to follow Anaidis. I know where he wants to take you and believe me - no one knows your story better then this women does.'[roman type]";
+	do nothing;
+	
 Scorpius_Sitis is a person in the Shelter_Sitis. The printed name of Scorpius_Sitis is "The Great Scorpius". 
 Machitikos_Sitis is a person in the Shelter_Sitis. The printed name of Machitikos_Sitis is "Machitikos". 
 
@@ -232,7 +246,9 @@ After examining Mitéra_Sitis for the first time:
 	now the description of the Domum Praesidium_Sitis is "Anaidis is outside at the Agora.";
 	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
 	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
-	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."
+	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing.";
+	now Scorpius_Sitis is in the Agora_Sitis;
+	now Machitikos_Sitis is in the Agora_Sitis;
 	
 
 The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
@@ -290,7 +306,7 @@ After taking the Spiked Mace_Sitis:
 	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."	
 
 
-[The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
+The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
 
 After examining the Rock Mine Tree_sitis for the first time:
 	say "Perfect! It's the perfect abditory to conquer Machitikos from the ambush.";
@@ -344,48 +360,6 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 [Charaktere]
 Carissimi_Sitis is a person in the Shelter_Sitis.The printed name of Carissimi_Sitis is "Carissimi".
 Ilithios_Sitis is a person. The printed name of Ilithios_Sitis is "Ilithios". 
-
-
-[instead of going nowhere from xy, say ]
-[Bei Namen Planet weg]
-
-
-
-[[Variables]	
-
-BlooSympathy is a truth state that varies. BlooSympathy is true.
-ConcealedDunia is a truth state that varies. ConcealedDunia is true.
-Helplesness is a truth state that varies. Helplesness is false.
-CloakWearing is a truth state that varies. CloakWearing is false. 
-A thing can be examined or unexamined.
-The carrying capacity of the player is 3.
-
-[---]
-
-
-After asking Dunia about anything:
-	if Dunia is in the Ascent_Frizza:
-		say "[if we have not examined Dunia][italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[otherwise][italic type]- Answer my question first. What is your [bold type]name[roman type]?[end if]";
-		now ConcealedDunia is false;
-	else:
-		continue the action.
-		
-After examining Dunia for the first time:
-	if Dunia is in the Ascent_Frizza:
-		if ConcealedDunia is true:
-			say "[italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
-			now ConcealedDunia is false.]
-	
-
-
-
-
-
-
-
-
-
-
 
 
 
