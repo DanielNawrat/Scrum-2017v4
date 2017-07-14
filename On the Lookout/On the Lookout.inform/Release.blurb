@@ -15,6 +15,7 @@ storyfile "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\
 ifiction "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 3 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\4.jpg"
 
 ! Placeholder variables
 
