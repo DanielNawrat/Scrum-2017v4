@@ -306,7 +306,7 @@ After taking the Spiked Mace_Sitis:
 	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."	
 
 
-The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
+[The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "It's perfect. It's the perfect tree to climb on." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
 
 After examining the Rock Mine Tree_sitis for the first time:
 	say "Perfect! It's the perfect abditory to conquer Machitikos from the ambush.";
@@ -325,7 +325,7 @@ After attacking Machitikos the first time:
 	say "Erzählschluss vom Kampf.";
 	now Scorpius_Sitis is in the Tree Thicket_sitis;
 	now Mitéra_Sitis is in the Tree Thicket_sitis;
-	now Anaidis_Sitis is in the Tree Thicket_sitis;]	
+	now Anaidis_Sitis is in the Tree Thicket_sitis;]
 	
 	
 The Spear_Sitis is a thing. The Spear_Sitis is in the Shelter_Sitis. The Spear_Sitis is portable. The description of the Spear_Sitis is "You can fight with this spear."
