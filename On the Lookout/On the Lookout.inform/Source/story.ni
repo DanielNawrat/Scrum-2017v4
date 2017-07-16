@@ -51,6 +51,7 @@ extract -	extract a sample from the Flux Current[line break]
 Kaldríss[line break]
 open/close (something)[line break]
 unlock/lock (something)[line break]
+push button - pushing a button[line break]
 insert (something) into (something)[line break]
 remove (something) from (something)[line break]
 shove (something) aside - some situations with blocked paths may require this[line break]
@@ -2107,7 +2108,7 @@ After going to Spectral Bridge:
 	say "You seem to have finally made your way through the temple complex. Suddenly you stand in front of a bridge but it's translucent and doesn't look like anyone could ever cross it. It's hard to describe really since it seems to be made out of light if that makes any sense? You're not sure yet whether to attempt crossing it or just stay here for now.";
 	produce a room description with going spacing conventions.
 
-The Bifröst Portal Chamber is a room. "A mysterious room filled to the brim with ancient technology. The most important of those technologies being the portal in the middle of the chamber. "
+The Bifröst Portal Chamber is a room. "A mysterious room filled to the brim with ancient technology. The most important of those technologies being the portal in the middle of the chamber."
 
 After going to the Bifröst Portal Chamber for the first time:
 	say "[italic type]This must be the portal chamber! Finally! Time to calibrate the portal so I can get into the orbit ASAP![roman type]";
