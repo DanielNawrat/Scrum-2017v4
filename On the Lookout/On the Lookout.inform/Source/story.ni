@@ -141,7 +141,19 @@ The Landing Zone_Sitis is a region. The Flat Rock_Sitis is in the Landing Zone_S
 [1. Raum]
 The Flat Rock_Sitis is a room. The printed name of the Flat Rock_Sitis is "Your arrival point. The Flat Rock". "You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away [bold type]in the east[roman type] you recognise some kind of different rooftops. Maybe someones living there who could help you?"
 
-[Beschreibungen für andere Himmelsrichtungen?]
+[Warum funktioniert das nicht?]
+[Instead of going north from the Flat Rock_Sitis:
+	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	do nothing;
+	
+Instead of going south from the Flat Rock_Sitis:
+	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	do nothing;
+	
+Instead of going west from the Flat Rock_Sitis:
+	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	do nothing;]
+
 
 [Region 2 - The Desert of Sitis]
 The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
@@ -159,7 +171,7 @@ The description of the wooden gate is "It seems to be closed. [bold type]Let's t
 The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "Rock Mine". The Description of the Rock Mine_Sitis is "". The Rock Mine_Sitis is east of the Wide Desert of Sitis_Sitis.
 
 Instead of going north from the Wide Desert of Sitis_Sitis:
-	say "Outch! It hurts. Apparently, you needs to feel that you are not able to pass the barbed wire fence.";
+	say "Ouch! It hurts. Apparently, you needs to feel that you are not able to pass the barbed wire fence.";
 	do nothing;
 
 Instead of going east from the Wide Desert of Sitis_Sitis:
@@ -222,19 +234,25 @@ After asking Anaidis_Sitis about "the fight" for the first time:
 	now Anaidis_Sitis is in Mitéra's Room_Sitis;
 	now the printed name of Anaidis_Sitis is "Anaidis";
 	now the description of the Agora_Sitis is "";
-	
+		
 Instead of going east from the Agora_Sitis:
 	say "You are looking at a lovely small sand house. It looks cozy as a sand house is able to look cozy, but the moment you want to enter a young beautiful woman is blocking your way.[paragraph break]";
-	say "[italic type]'Kiddo, that's the wrong way. You really need to follow Anaidis. I know where he wants to take you and believe me - no one knows your story better then this women does.'[roman type]";
+	say "[italic type]'Kiddo, that's the wrong way. You really need to follow Anaidis. I know where he wants to take you and believe me - no one knows our story better then this women does.'[roman type]";
 	do nothing;
 	
-Scorpius_Sitis is a person in the Shelter_Sitis. The printed name of Scorpius_Sitis is "The Great Scorpius". 
+Scorpius_Sitis is a person in the Shelter_Sitis. The printed name of Scorpius_Sitis is "the Great Scorpius". 
 Machitikos_Sitis is a person in the Shelter_Sitis. The printed name of Machitikos_Sitis is "Machitikos". 
 
 The Domum Praesidium_Sitis is a room. The printed name of the Domum Praesidium_Sitis is "The Domum Praesidium of Sicuum". The Domum Praesidium_Sitis is west of The Agora_Sitis. 
-The description of the Domum Praesidium_Sitis is "As you enter, you see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. So, this huge sandy hut seems to have an official function. During you are still thinking about to whom you are going to speak right now, Anaidis already walks [bold type]straight ahead[roman type] into a smaller room. Hurry up! Otherwise you maybe going to lose him."
+The description of the Domum Praesidium_Sitis is "You enter the Domum Praesidium of Sicuum. You see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. So, this huge sandy hut seems to have an official function. During you are still thinking about to whom you are going to speak right now, [bold type]Anaidis already walks west into a smaller room.[roman type] Hurry up. Otherwise you maybe going to lose him."
 
-Mitéra's Room_Sitis is a room. The printed name of Mitéra's Room_Sitis is "Mitéra's Room". Mitéra's Room_Sitis is north of the Domum Praesidium_Sitis.
+Following Anaidis_Sitis is an action applying to nothing.
+Understand "follow Anaidis_Sitis" as following Anaidis_Sitis.
+
+After following Anaidis_Sitis for the first time:
+	now Axesto is in Mitéra's Room_Sitis;
+
+Mitéra's Room_Sitis is a room. The printed name of Mitéra's Room_Sitis is "Mitéra's Room". Mitéra's Room_Sitis is west of the Domum Praesidium_Sitis.
 
 Mitéra_Sitis is a person in Mitéra's Room_Sitis. The printed name of Mitéra_Sitis is "Mitéra". The description of Mitéra_Sitis is "Mitéra is a small and wrinkled woman. At the moment she lies on a narrow enhancement out of stone. It seems to be her bed. Anaidis kneels on the ground next to her whispering something incomprehensible. Suddenly, she gets up, actuates you and then her eyes lighten up. [italic type][paragraph break]'Hello stranger! My name is Mitéra, I am the protectress of my loved ones here in Sicuum. Anaidis mentioned you are searching for water. Is that right?'[roman type]"
 
@@ -245,13 +263,10 @@ After examining Mitéra_Sitis for the first time:
 	now the description of Mitéra_Sitis is "The old woman is friendly looking at you.";
 	now Anaidis_Sitis is in the Agora_Sitis;
 	now the description of the Domum Praesidium_Sitis is "Anaidis is outside at the Agora.";
-	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
+	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see how the people are reacting to him. But first, you need to grind out your way to Anaidis. He's hiding - again - behind one market booth. Luckily you are very small, so you are able to sneak through the crowd of people easily. The boy is totally focused on everything, but you. But you can't wait any longer. You wanna know the whole story about this Scorpius. [bold type]Go ask him![roman type]";
 	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
 	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing.";
-	now Scorpius_Sitis is in the Agora_Sitis;
-	now Machitikos_Sitis is in the Agora_Sitis;
 	
-
 The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
 
 The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "Perfect! It's the perfect abditory to conquer Machitikos from the ambush." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
@@ -280,16 +295,29 @@ After attacking Machitikos the first time:
 
 
 After asking Anaidis_Sitis about "scorpius":
-	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, [bold type]your only chance is to fight against this warrior Machitikos.[roman type][paragraph break]";
-	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. [bold type]You step directly in front of the great Scorpius.[roman type]"
+	say "Anaidis whispers.[paragraph break]";
+	say "[italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to survive one week without new water. And everyone who is trying to steal or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, your only chance is also to fight against his warrior Machitikos. Are you going to?[roman type][paragraph break]";
+	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. The chance that you will beat him seems slightly. Too slightly. But anyhow you feel determined - you really wanna overmatch Machitikos. For yourself and for the repressed Sitisianer. You step directly in front of Scorpius.[paragraph break]";
+	say "Scorpius is sitting on an amazingly big wooden throne. To be seen as Machitikos first opponent, you need to [bold type]step in front of Scorpius[roman type], where everyone can see you.";
+	now Scorpius_Sitis is in the Agora_Sitis;
+	
+	
+Stepping in front of Scorpius_Sitis is an action applying to nothing.
+Understand "step in front of Scorpius" as stepping in front of Scorpius_Sitis.
 
-After examining Scorpius_Sitis for the first time:
-	say "Scorpius sits on a high wooden throne. [italic type]'What do you want? You little deformed bastard?!'[roman type] You answer assertive. [italic type][paragraph break]'I wanna fight. I wanna fight against your bastard Machitikos.'[roman type][paragraph break]";
-	say "All the people around you start whispering fluttered. Scorpius stares at you incredulous. [italic type][paragraph break]'So... go on. Abortion![roman type]";
+After stepping in front of Scorpius_Sitis for the first time:
+	say "It needed a few seconds until the great Scorpius perceives you.[paragraph break]";
+	say "[italic type]'What do you want? You little deformed bastard?!'[roman type] [paragraph break]";
+	say "You answer assertive.[paragraph break]";
+	say "[italic type]'I wanna fight. I wanna fight against Machitikos.'[roman type][paragraph break]";
+	say "All the people around you start whispering fluttered. Scorpius stares at you incredulously. Then starts smiling devilishly.[paragraph break]";
+	say "[italic type]'So... go on. Abortion![roman type][paragraph break]";
+	say "Suddenly the mentioned warrior is standing right next to you.";
+	now Machitikos_Sitis is in the Agora_Sitis;
 
-
+[You see nothing special about Machitikos - Fehler - wie beheben?]
 After examining Machitikos_Sitis for the first time:
-	say "Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. [bold type]Which one do you take[italic type]?";
+	say "Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. [bold type]Which one do you take?[italic type]";
 	now the Spear_Sitis is in the Agora_Sitis;
 	now the Spiked Mace_Sitis is in the Agora_Sitis;
 
@@ -318,15 +346,15 @@ After climbing on the Rock Mine Tree_Sitis for the first time:
 	now Machitikos_Sitis is in the Tree Thicket_sitis;
 	now the description of Machitikos_Sitis is "";
 	
-Attacking Machitikos is an action applying to nothing.
-Understand "attack Machitikos" as attacking Machitikos.
+[Attacking Machitikos is an action applying to nothing.
+Understand "attack Machitikos" as attacking Machitikos.]
 
 After attacking Machitikos the first time:
 	say "With an epic jump, holding the spear in the air, you fall on Machitikos muscly back. He shrieks, as your weapon pierces into his chest. You let up on him, he falters and falls![paragraph break]";
 	say "Erzählschluss vom Kampf.";
 	now Scorpius_Sitis is in the Tree Thicket_sitis;
 	now Mitéra_Sitis is in the Tree Thicket_sitis;
-	now Anaidis_Sitis is in the Tree Thicket_sitis;]
+	now Anaidis_Sitis is in the Tree Thicket_sitis;]	
 	
 	
 The Spear_Sitis is a thing. The Spear_Sitis is in the Shelter_Sitis. The Spear_Sitis is portable. The description of the Spear_Sitis is "You can fight with this spear."
@@ -360,9 +388,7 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 
 [Charaktere]
 Carissimi_Sitis is a person in the Shelter_Sitis.The printed name of Carissimi_Sitis is "Carissimi".
-Ilithios_Sitis is a person. The printed name of Ilithios_Sitis is "Ilithios". 
-
-
+Ilithios_Sitis is a person. The printed name of Ilithios_Sitis is "Ilithios".
 
 
 
