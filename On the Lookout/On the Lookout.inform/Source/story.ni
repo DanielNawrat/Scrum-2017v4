@@ -1723,10 +1723,6 @@ After asking Trapist about "Spaceship":
 [
 [TO DO]
 
-- Navigation verbessern (z.B. "In the south/north", "Instead of going nowhere from X say "..")
-- Beschreibungen für Räume (insbesondere Blakkríss Temple) erweitern
-
-
 [IN PROGRESS]
 
 - "End of Game" Text schreiben und so prpgrammieren, dass er am Spielende ausgegeben wird
@@ -1743,8 +1739,6 @@ Section 1 - Crash Site
 Include Automap by Mark Tilford.
 
 [Finding a way off the space ship]
-
-Axesto is a person. The Player is Axesto.
 
 [Spacesuit with energy capacitor]
 A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
@@ -2126,7 +2120,7 @@ The Great Hall_Kaldríss is east of the Spectral Bridge.
 Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this place and never did I let anyone past my sword.".
 
 [Final Dialogue]
-After asking Heimdallr about anything:
+After asking Heimdallr about "anything":
 	say "Wolololo."
 
 After asking Heimdallr about "portal chamber":
@@ -2138,6 +2132,5 @@ After asking heimdallr about "open sesame":
 
 [The End]
 
-After entering the Bifröst Portal Chamber :
-	end the story;
-	say "Insert end of game text here!"
+After going to the Bifröst Portal Chamber for the first time:
+	end the story finally saying "You wake up lying in your bed on board of your spaceship. For a moment you thought that you were just having a bad dream but then you realize that only moments ago you've been on Kaldríss, one of the coldest planets in this solar system. You almost freezed to death, got lost in a cave that apparently is inhabited by Yetíss and then you talked to Heimdallr, some kind of ancient warden, that magically teleported you into a portal chamber. After that just blanks. You simply can't remember how you actually managed to get off this planet.[paragraph break][italic type]Was all of this really just a bad dream? Perhaps a result of all the bad things that recently happened to me on all the other planets I've visited, well, not willingly though.[paragraph break]But it felt so real? Maybe this is just the consequence of trying to calibrate ancient portal devices which I don't really know anything about.[paragraph break]On the other hand I should just be grateful that I'm still alive and that I have my spaceship back.[paragraph break]After all the stuff that has happened I should probably just leave this galaxy and head home. It might not be perfect but I should appreciate it for what it is.[paragraph break]It's still better than anything out here.".
