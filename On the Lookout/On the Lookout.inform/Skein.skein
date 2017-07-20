@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-1">
+<Skein rootNode="node-103">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-1"/>
-  <item nodeId="node-1">
+  <activeNode nodeId="node-103"/>
+  <item nodeId="node-103">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.&#x000A;&#x000A;Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Franziska, Tim, Kevin, Tobias&#x000A;Release 1 / Serial number 170712 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.&#x000A;&#x000A;Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. &#x000A;Black planes and sharp cliffs of a dark red shape the landscape. In the east you perceive a massive rock formation, in the west you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the south there seem to be some sort of industrial constructions, far in the north you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. &#x000A;Your ship's on the ground, and you are too, barely. Welcome to Frizza.&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Franziska, Tim, Kevin, Tobias&#x000A;Release 1 / Serial number 170720 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-2"/>
+      <child nodeId="node-104"/>
     </children>
   </item>
-  <item nodeId="node-2">
+  <item nodeId="node-104">
     <command xml:space="preserve">take frizza</command>
-    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south-west and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-3"/>
+      <child nodeId="node-105"/>
     </children>
   </item>
-  <item nodeId="node-3">
+  <item nodeId="node-105">
     <command xml:space="preserve">x spaceship</command>
     <result xml:space="preserve">Your spaceship, broken down due to power loss. The clouds in the atmosphere may have sped up the discharge.&#x000A;&#x000A;In the Discharged Spaceship is a Power Unit.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -32,10 +32,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-4"/>
+      <child nodeId="node-106"/>
     </children>
   </item>
-  <item nodeId="node-4">
+  <item nodeId="node-106">
     <command xml:space="preserve">x power unit</command>
     <result xml:space="preserve">The Power Unit is empty.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -43,10 +43,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-5"/>
+      <child nodeId="node-107"/>
     </children>
   </item>
-  <item nodeId="node-5">
+  <item nodeId="node-107">
     <command xml:space="preserve">go sw</command>
     <result xml:space="preserve">You don't want to go there.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -54,10 +54,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-6"/>
+      <child nodeId="node-108"/>
     </children>
   </item>
-  <item nodeId="node-6">
+  <item nodeId="node-108">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Flux&#x000A;A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux" presence in your body, as if your atoms were spinning three times their normal pace. You don't know if it's a good idea to approach it further.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -65,10 +65,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-7"/>
+      <child nodeId="node-109"/>
     </children>
   </item>
-  <item nodeId="node-7">
+  <item nodeId="node-109">
     <command xml:space="preserve">x current</command>
     <result xml:space="preserve">A branch of the Flux.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -76,10 +76,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-8"/>
+      <child nodeId="node-110"/>
     </children>
   </item>
-  <item nodeId="node-8">
+  <item nodeId="node-110">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -87,10 +87,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-9"/>
+      <child nodeId="node-111"/>
     </children>
   </item>
-  <item nodeId="node-9">
+  <item nodeId="node-111">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -98,10 +98,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-10"/>
+      <child nodeId="node-112"/>
     </children>
   </item>
-  <item nodeId="node-10">
+  <item nodeId="node-112">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one.&#x000A;&#x000A;You can go east  and west.&#x000A;&#x000A;You can see a Cabin (empty) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -109,10 +109,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-11"/>
+      <child nodeId="node-113"/>
     </children>
   </item>
-  <item nodeId="node-11">
+  <item nodeId="node-113">
     <command xml:space="preserve">x cabin</command>
     <result xml:space="preserve">The only one you can safely reach. One part of it seems to be solidly built into the rock, the other half protruding into the sheer abyss of the ravine. By the look of it you could swear that it will topple down the cliff any moment, but it holds. Inside you see a warm light and someone moving. You could try to approach.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -120,10 +120,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-12"/>
+      <child nodeId="node-114"/>
     </children>
   </item>
-  <item nodeId="node-12">
+  <item nodeId="node-114">
     <command xml:space="preserve">approch cabin</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -131,10 +131,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-13"/>
+      <child nodeId="node-115"/>
     </children>
   </item>
-  <item nodeId="node-13">
+  <item nodeId="node-115">
     <command xml:space="preserve">approach cabin</command>
     <result xml:space="preserve">You scramble over the ghastly landscape, keeping the ravine's edge to a good distance. You get an even better view of the structures that span the width of the gorge, you are now certain that there is mining equipment and transportation units, some manned and some apparently controlled remotely. You approach the cabin, saving a couple of steps in distance, and try to glance into the inside of the cabin. Someone sits there at a metal desk, wearing a hardhat and sunglasses, between ridiculous heaps of papers and files. In his mouth there is an oblong roll, glowing blue, and on one of the inside wall hangs an oversized metal suit, equipped with all kind of complex-looking gear. As you eyeball the scene, the man suddenly turns his head and straigthly spots you through his shaded glasses. He stands up opens a window, pointing in your direction. You see a broad smile stamped into his face.&#x000A;&#x000A;Oi, mate! What ya doin" all by yaself out there? Ya ain't have no mischief in mind, do ya? Don't look like one of those blue Duju folk. What's ya name, mate?&#x000A;&#x000A;The thick accent washes over you. Momentarily, you believe you smelled grilled meat ... you abandon the thought.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -142,10 +142,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-14"/>
+      <child nodeId="node-116"/>
     </children>
   </item>
-  <item nodeId="node-14">
+  <item nodeId="node-116">
     <command xml:space="preserve">answer name</command>
     <result xml:space="preserve">(to Trapist)&#x000A;There is no reply.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -153,10 +153,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-15"/>
+      <child nodeId="node-117"/>
     </children>
   </item>
-  <item nodeId="node-15">
+  <item nodeId="node-117">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;You see a part of the Flux winding through a fjord deep down. Above your level there are metal constructions, thrust into the rock, from where little transportation devices start to the blue current at the valley's bottom, each manned with two humanlike figures. Near the bridgelike scaffold (you think it may be the only way across the gap) you notice some cabins, tightly hugging the cliffs. It seems you could approach the nearest one.&#x000A;&#x000A;You can go east  and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -164,10 +164,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-16"/>
+      <child nodeId="node-118"/>
     </children>
   </item>
-  <item nodeId="node-16">
+  <item nodeId="node-118">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger. &#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -175,10 +175,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-17"/>
+      <child nodeId="node-119"/>
     </children>
   </item>
-  <item nodeId="node-17">
+  <item nodeId="node-119">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -186,10 +186,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-18"/>
+      <child nodeId="node-120"/>
     </children>
   </item>
-  <item nodeId="node-18">
+  <item nodeId="node-120">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -197,10 +197,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-19"/>
+      <child nodeId="node-121"/>
     </children>
   </item>
-  <item nodeId="node-19">
+  <item nodeId="node-121">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -208,10 +208,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-20"/>
+      <child nodeId="node-122"/>
     </children>
   </item>
-  <item nodeId="node-20">
+  <item nodeId="node-122">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -219,10 +219,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-21"/>
+      <child nodeId="node-123"/>
     </children>
   </item>
-  <item nodeId="node-21">
+  <item nodeId="node-123">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -230,10 +230,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-22"/>
+      <child nodeId="node-124"/>
     </children>
   </item>
-  <item nodeId="node-22">
+  <item nodeId="node-124">
     <command xml:space="preserve">enter cabin</command>
     <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -241,10 +241,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-23"/>
+      <child nodeId="node-125"/>
     </children>
   </item>
-  <item nodeId="node-23">
+  <item nodeId="node-125">
     <command xml:space="preserve">x cabin</command>
     <result xml:space="preserve">A small hut in which Trapist is working. There are heaps of paperwork, the faint glow of a light bulb and Trapist sitting in the midst of it, his face illuminated by his bluishly burning cigarette.&#x000A;&#x000A;In the Cabin is Trapist.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -252,10 +252,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-24"/>
+      <child nodeId="node-126"/>
     </children>
   </item>
-  <item nodeId="node-24">
+  <item nodeId="node-126">
     <command xml:space="preserve">x trapist</command>
     <result xml:space="preserve">A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -263,10 +263,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-25"/>
+      <child nodeId="node-127"/>
     </children>
   </item>
-  <item nodeId="node-25">
+  <item nodeId="node-127">
     <command xml:space="preserve">ask trapist about my mother</command>
     <result xml:space="preserve">Wait a second, why not introduce yourself first? You shy, mate? What's ya name?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -274,10 +274,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-26"/>
+      <child nodeId="node-128"/>
     </children>
   </item>
-  <item nodeId="node-26">
+  <item nodeId="node-128">
     <command xml:space="preserve">my name is axesto</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -285,10 +285,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-27"/>
+      <child nodeId="node-129"/>
     </children>
   </item>
-  <item nodeId="node-27">
+  <item nodeId="node-129">
     <command xml:space="preserve">answer axesto</command>
     <result xml:space="preserve">(to Trapist)&#x000A;Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -296,10 +296,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-28"/>
+      <child nodeId="node-130"/>
     </children>
   </item>
-  <item nodeId="node-28">
+  <item nodeId="node-130">
     <command xml:space="preserve">answer no</command>
     <result xml:space="preserve">(to Trapist)&#x000A;There is no reply.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -307,10 +307,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-29"/>
+      <child nodeId="node-131"/>
     </children>
   </item>
-  <item nodeId="node-29">
+  <item nodeId="node-131">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -318,10 +318,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-30"/>
+      <child nodeId="node-132"/>
     </children>
   </item>
-  <item nodeId="node-30">
+  <item nodeId="node-132">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -329,10 +329,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-31"/>
+      <child nodeId="node-133"/>
     </children>
   </item>
-  <item nodeId="node-31">
+  <item nodeId="node-133">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -340,10 +340,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-32"/>
+      <child nodeId="node-134"/>
     </children>
   </item>
-  <item nodeId="node-32">
+  <item nodeId="node-134">
     <command xml:space="preserve">ask trapist about power unit</command>
     <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -351,10 +351,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-33"/>
+      <child nodeId="node-135"/>
     </children>
   </item>
-  <item nodeId="node-33">
+  <item nodeId="node-135">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -362,10 +362,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-34"/>
+      <child nodeId="node-136"/>
     </children>
   </item>
-  <item nodeId="node-34">
+  <item nodeId="node-136">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -373,10 +373,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-35"/>
+      <child nodeId="node-137"/>
     </children>
   </item>
-  <item nodeId="node-35">
+  <item nodeId="node-137">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -384,10 +384,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-36"/>
+      <child nodeId="node-138"/>
     </children>
   </item>
-  <item nodeId="node-36">
+  <item nodeId="node-138">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">The broad Flux of phosphorescent energy blocks your way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -395,10 +395,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-37"/>
+      <child nodeId="node-139"/>
     </children>
   </item>
-  <item nodeId="node-37">
+  <item nodeId="node-139">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -406,10 +406,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-38"/>
+      <child nodeId="node-140"/>
     </children>
   </item>
-  <item nodeId="node-38">
+  <item nodeId="node-140">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -417,10 +417,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-39"/>
+      <child nodeId="node-141"/>
     </children>
   </item>
-  <item nodeId="node-39">
+  <item nodeId="node-141">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -428,10 +428,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-40"/>
+      <child nodeId="node-142"/>
     </children>
   </item>
-  <item nodeId="node-40">
+  <item nodeId="node-142">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -439,10 +439,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-41"/>
+      <child nodeId="node-143"/>
     </children>
   </item>
-  <item nodeId="node-41">
+  <item nodeId="node-143">
     <command xml:space="preserve">go to cabin</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -450,10 +450,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-42"/>
+      <child nodeId="node-144"/>
     </children>
   </item>
-  <item nodeId="node-42">
+  <item nodeId="node-144">
     <command xml:space="preserve">x cabin</command>
     <result xml:space="preserve">A small hut in which Trapist is working. There are heaps of paperwork, the faint glow of a light bulb and Trapist sitting in the midst of it, his face illuminated by his bluishly burning cigarette.&#x000A;&#x000A;In the Cabin is Trapist.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -461,10 +461,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-43"/>
+      <child nodeId="node-145"/>
     </children>
   </item>
-  <item nodeId="node-43">
+  <item nodeId="node-145">
     <command xml:space="preserve">x trapist</command>
     <result xml:space="preserve">A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -472,10 +472,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-44"/>
+      <child nodeId="node-146"/>
     </children>
   </item>
-  <item nodeId="node-44">
+  <item nodeId="node-146">
     <command xml:space="preserve">ask trapist about flux</command>
     <result xml:space="preserve">Now that's why we're all here. That slack goo gives yaself, ya family, ya neighbors and ya soot'n great-step-uncle money for a thousand years to come. One time lucky, never care about anything anymore. At least if we'd keep the profit. Damn tough mining that stuff though.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -483,10 +483,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-45"/>
+      <child nodeId="node-147"/>
     </children>
   </item>
-  <item nodeId="node-45">
+  <item nodeId="node-147">
     <command xml:space="preserve">ask about spaceship</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -494,10 +494,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-46"/>
+      <child nodeId="node-148"/>
     </children>
   </item>
-  <item nodeId="node-46">
+  <item nodeId="node-148">
     <command xml:space="preserve">ask trapist about current</command>
     <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -505,10 +505,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-47"/>
+      <child nodeId="node-149"/>
     </children>
   </item>
-  <item nodeId="node-47">
+  <item nodeId="node-149">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -516,10 +516,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-48"/>
+      <child nodeId="node-150"/>
     </children>
   </item>
-  <item nodeId="node-48">
+  <item nodeId="node-150">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -527,10 +527,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-49"/>
+      <child nodeId="node-151"/>
     </children>
   </item>
-  <item nodeId="node-49">
+  <item nodeId="node-151">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -538,10 +538,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-50"/>
+      <child nodeId="node-152"/>
     </children>
   </item>
-  <item nodeId="node-50">
+  <item nodeId="node-152">
     <command xml:space="preserve">x rock</command>
     <result xml:space="preserve">A huge, slender rock looms at the shore of the Flux. It would make a good land to the Flux. It doesn't seem to stand all too stable, if you could only knock it over with something ...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -549,10 +549,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-51"/>
+      <child nodeId="node-153"/>
     </children>
   </item>
-  <item nodeId="node-51">
+  <item nodeId="node-153">
     <command xml:space="preserve">knock over rock</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -560,10 +560,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-52"/>
+      <child nodeId="node-154"/>
     </children>
   </item>
-  <item nodeId="node-52">
+  <item nodeId="node-154">
     <command xml:space="preserve">knock rock over</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -571,10 +571,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-53"/>
+      <child nodeId="node-155"/>
     </children>
   </item>
-  <item nodeId="node-53">
+  <item nodeId="node-155">
     <command xml:space="preserve">destroy rock</command>
     <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -582,10 +582,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-54"/>
+      <child nodeId="node-156"/>
     </children>
   </item>
-  <item nodeId="node-54">
+  <item nodeId="node-156">
     <command xml:space="preserve">take rock</command>
     <result xml:space="preserve">You don't seem to be strong enough.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -593,10 +593,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-55"/>
+      <child nodeId="node-157"/>
     </children>
   </item>
-  <item nodeId="node-55">
+  <item nodeId="node-157">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -604,10 +604,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-56"/>
+      <child nodeId="node-158"/>
     </children>
   </item>
-  <item nodeId="node-56">
+  <item nodeId="node-158">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -615,10 +615,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-57"/>
+      <child nodeId="node-159"/>
     </children>
   </item>
-  <item nodeId="node-57">
+  <item nodeId="node-159">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -626,10 +626,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-58"/>
+      <child nodeId="node-160"/>
     </children>
   </item>
-  <item nodeId="node-58">
+  <item nodeId="node-160">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -637,10 +637,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-59"/>
+      <child nodeId="node-161"/>
     </children>
   </item>
-  <item nodeId="node-59">
+  <item nodeId="node-161">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -648,10 +648,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-60"/>
+      <child nodeId="node-162"/>
     </children>
   </item>
-  <item nodeId="node-60">
+  <item nodeId="node-162">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -659,10 +659,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-61"/>
+      <child nodeId="node-163"/>
     </children>
   </item>
-  <item nodeId="node-61">
+  <item nodeId="node-163">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -670,10 +670,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-62"/>
+      <child nodeId="node-164"/>
     </children>
   </item>
-  <item nodeId="node-62">
+  <item nodeId="node-164">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -681,10 +681,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-63"/>
+      <child nodeId="node-165"/>
     </children>
   </item>
-  <item nodeId="node-63">
+  <item nodeId="node-165">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -692,10 +692,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-64"/>
+      <child nodeId="node-166"/>
     </children>
   </item>
-  <item nodeId="node-64">
+  <item nodeId="node-166">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -703,10 +703,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-65"/>
+      <child nodeId="node-167"/>
     </children>
   </item>
-  <item nodeId="node-65">
+  <item nodeId="node-167">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -714,10 +714,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-66"/>
+      <child nodeId="node-168"/>
     </children>
   </item>
-  <item nodeId="node-66">
+  <item nodeId="node-168">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -725,10 +725,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-67"/>
+      <child nodeId="node-169"/>
     </children>
   </item>
-  <item nodeId="node-67">
+  <item nodeId="node-169">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Scoop (Settler's Base)&#x000A;The main Flux working of the region. &#x000A;&#x000A; You can go east and west.&#x000A;&#x000A;You can see a Cabin (in which is Trapist) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -736,10 +736,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-68"/>
+      <child nodeId="node-170"/>
     </children>
   </item>
-  <item nodeId="node-68">
+  <item nodeId="node-170">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -747,10 +747,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-69"/>
+      <child nodeId="node-171"/>
     </children>
   </item>
-  <item nodeId="node-69">
+  <item nodeId="node-171">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Wasteland&#x000A;One of the dreary planes in the region.&#x000A;&#x000A;You can go west and north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -758,10 +758,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-70"/>
+      <child nodeId="node-172"/>
     </children>
   </item>
-  <item nodeId="node-70">
+  <item nodeId="node-172">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -769,10 +769,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-71"/>
+      <child nodeId="node-173"/>
     </children>
   </item>
-  <item nodeId="node-71">
+  <item nodeId="node-173">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Flux&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east and south.&#x000A;&#x000A;You can see an Unregulated Flux Current here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -780,10 +780,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-72"/>
+      <child nodeId="node-174"/>
     </children>
   </item>
-  <item nodeId="node-72">
+  <item nodeId="node-174">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -791,10 +791,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-73"/>
+      <child nodeId="node-175"/>
     </children>
   </item>
-  <item nodeId="node-73">
+  <item nodeId="node-175">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;You can go west and up.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -802,10 +802,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-74"/>
+      <child nodeId="node-176"/>
     </children>
   </item>
-  <item nodeId="node-74">
+  <item nodeId="node-176">
     <command xml:space="preserve">go up</command>
     <result xml:space="preserve">You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -813,10 +813,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-75"/>
+      <child nodeId="node-177"/>
     </children>
   </item>
-  <item nodeId="node-75">
+  <item nodeId="node-177">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -824,10 +824,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-76"/>
+      <child nodeId="node-178"/>
     </children>
   </item>
-  <item nodeId="node-76">
+  <item nodeId="node-178">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Ascent&#x000A;The foot of the mountain. &#x000A;&#x000A;A narrow path leads upwards. You can also go west.&#x000A;&#x000A;You can see Dunia here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -835,10 +835,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-77"/>
+      <child nodeId="node-179"/>
     </children>
   </item>
-  <item nodeId="node-77">
+  <item nodeId="node-179">
     <command xml:space="preserve">look around</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -846,10 +846,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-78"/>
+      <child nodeId="node-180"/>
     </children>
   </item>
-  <item nodeId="node-78">
+  <item nodeId="node-180">
     <command xml:space="preserve">x dunia</command>
     <result xml:space="preserve">A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind.&#x000A;&#x000A;You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your name.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -857,10 +857,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-79"/>
+      <child nodeId="node-181"/>
     </children>
   </item>
-  <item nodeId="node-79">
+  <item nodeId="node-181">
     <command xml:space="preserve">answer axesto</command>
     <result xml:space="preserve">(to Dunia)&#x000A;What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the Techies or of the Duju?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -868,10 +868,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-80"/>
+      <child nodeId="node-182"/>
     </children>
   </item>
-  <item nodeId="node-80">
+  <item nodeId="node-182">
     <command xml:space="preserve">techies</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -879,10 +879,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-81"/>
+      <child nodeId="node-183"/>
     </children>
   </item>
-  <item nodeId="node-81">
+  <item nodeId="node-183">
     <command xml:space="preserve">asnwer techies</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -890,10 +890,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-82"/>
+      <child nodeId="node-184"/>
     </children>
   </item>
-  <item nodeId="node-82">
+  <item nodeId="node-184">
     <command xml:space="preserve">answer techies</command>
     <result xml:space="preserve">(to Dunia)&#x000A;Then begone with you! I don't want anything to do with that!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -901,10 +901,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-83"/>
+      <child nodeId="node-185"/>
     </children>
   </item>
-  <item nodeId="node-83">
+  <item nodeId="node-185">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Ascent&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -912,10 +912,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-84"/>
+      <child nodeId="node-186"/>
     </children>
   </item>
-  <item nodeId="node-84">
+  <item nodeId="node-186">
     <command xml:space="preserve">answer duju</command>
     <result xml:space="preserve">(to Dunia)&#x000A;Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.&#x000A;&#x000A; With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.&#x000A; Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux. As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred metes in front of the entrance your companion turns to you. &#x000A;&#x000A;Try not to look too provoking.&#x000A;&#x000A;You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.&#x000A;&#x000A;Flux Gate&#x000A;An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. &#x000A;&#x000A;You can go east.&#x000A;&#x000A;Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressive sized person, already bellowing a few direct words with a booming voice.&#x000A;&#x000A;Dunia! Who is this? Explain yourself!&#x000A;&#x000A;A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has a slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.&#x000A;&#x000A;Both eyeball you thoroughly for what seems to you like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you.&#x000A;&#x000A;Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.&#x000A;&#x000A; They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could look around. Of course you could also do as you were told and wait.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -923,10 +923,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-85"/>
+      <child nodeId="node-187"/>
     </children>
   </item>
-  <item nodeId="node-85">
+  <item nodeId="node-187">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Flux Gate&#x000A;An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. &#x000A;&#x000A;You can go east.&#x000A;&#x000A;You can see a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -934,10 +934,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-86"/>
+      <child nodeId="node-188"/>
     </children>
   </item>
-  <item nodeId="node-86">
+  <item nodeId="node-188">
     <command xml:space="preserve">x console</command>
     <result xml:space="preserve">A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. &#x000A;&#x000A;As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.&#x000A;&#x000A;Anyhow, you could examine the console further.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -945,10 +945,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-87"/>
+      <child nodeId="node-189"/>
     </children>
   </item>
-  <item nodeId="node-87">
+  <item nodeId="node-189">
     <command xml:space="preserve">x console</command>
     <result xml:space="preserve">After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... &#x000A;&#x000A;As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could examine it further.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -956,10 +956,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-88"/>
+      <child nodeId="node-190"/>
     </children>
   </item>
-  <item nodeId="node-88">
+  <item nodeId="node-190">
     <command xml:space="preserve">x console</command>
     <result xml:space="preserve">Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you await Dunia and Du'un to set you free.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -967,10 +967,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-89"/>
+      <child nodeId="node-191"/>
     </children>
   </item>
-  <item nodeId="node-89">
+  <item nodeId="node-191">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">In your present condition, that's hardly possible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -978,10 +978,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-90"/>
+      <child nodeId="node-192"/>
     </children>
   </item>
-  <item nodeId="node-90">
+  <item nodeId="node-192">
     <command xml:space="preserve">x weapon's rack</command>
     <result xml:space="preserve">In your present condition, that's hardly possible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -989,10 +989,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-91"/>
+      <child nodeId="node-193"/>
     </children>
   </item>
-  <item nodeId="node-91">
+  <item nodeId="node-193">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">In your present condition, that's hardly possible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1000,10 +1000,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-92"/>
+      <child nodeId="node-194"/>
     </children>
   </item>
-  <item nodeId="node-92">
+  <item nodeId="node-194">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">You lie, waiting, contemplating your choices.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1011,10 +1011,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-93"/>
+      <child nodeId="node-195"/>
     </children>
   </item>
-  <item nodeId="node-93">
+  <item nodeId="node-195">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Still you lie, your eyes fixed in position due to the fact that your head is fixed as well.  As if that wasn't enough, your punishers turned you to a rather unexciting corner of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1022,10 +1022,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-94"/>
+      <child nodeId="node-196"/>
     </children>
   </item>
-  <item nodeId="node-94">
+  <item nodeId="node-196">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Finally you hear steps approaching and a booming laughter.&#x000A;&#x000A;A little snoopy, are we? Well, not the worst of traits. Hold still.&#x000A;&#x000A;You hear clattering and feel your mobility returning. Stiffly you get up and see the two Duju standing before you. You think you recognize a bit of amusement in the eyes of the bigger one.&#x000A;&#x000A;Don't worry, our guards are very cautious, and our Operators even more so, I am certain you meant no harm, if you would have, you wouldn't be here any more.&#x000A;&#x000A;He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. &#x000A;&#x000A;That is a Flux Extractor, the Techies call them "Scoops". It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and extract two samples of the Flux, one from the current before it passes through this gate, and one after it has done so. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here, Dunia will be to your assistance.&#x000A;&#x000A;You receive a Flux Extractor.&#x000A;&#x000A;With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.&#x000A;&#x000A;To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1033,10 +1033,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-95"/>
+      <child nodeId="node-197"/>
     </children>
   </item>
-  <item nodeId="node-95">
+  <item nodeId="node-197">
     <command xml:space="preserve">ask dunia about flux extractor</command>
     <result xml:space="preserve">She giggles a bit.&#x000A;&#x000A;It is simple, you will see when you get to the Flux. Just dip it in.&#x000A;&#x000A;She shows a devilish grin. Oh, but there's something I can help you with.&#x000A;&#x000A;Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.&#x000A;&#x000A;Here, take this, it will prevent the Flux from disintegrating you all too fast.&#x000A;&#x000A;The devilish grin emerges again.&#x000A;&#x000A;And stop staring.&#x000A;&#x000A;You receive a Sinkan Cloak.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1044,10 +1044,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-96"/>
+      <child nodeId="node-198"/>
     </children>
   </item>
-  <item nodeId="node-96">
+  <item nodeId="node-198">
     <command xml:space="preserve">x cloak</command>
     <result xml:space="preserve">The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1055,10 +1055,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-97"/>
+      <child nodeId="node-199"/>
     </children>
   </item>
-  <item nodeId="node-97">
+  <item nodeId="node-199">
     <command xml:space="preserve">x insignia</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1066,10 +1066,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-98"/>
+      <child nodeId="node-200"/>
     </children>
   </item>
-  <item nodeId="node-98">
+  <item nodeId="node-200">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Flux Gate&#x000A;An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. &#x000A;&#x000A;You can go east.&#x000A;&#x000A;You can see Dunia, a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1077,10 +1077,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-99"/>
+      <child nodeId="node-201"/>
     </children>
   </item>
-  <item nodeId="node-99">
+  <item nodeId="node-201">
     <command xml:space="preserve">x weapon's rack</command>
     <result xml:space="preserve">An ugly but pracitcal piece of furniture, made to store weaponry.&#x000A;&#x000A;On the weapon's rack is a gun.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1088,10 +1088,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-100"/>
+      <child nodeId="node-202"/>
     </children>
   </item>
-  <item nodeId="node-100">
+  <item nodeId="node-202">
     <command xml:space="preserve">x gun</command>
     <result xml:space="preserve">An unfamiliar chunk of metal with a glowing core, you can barely identify it, except for the muzzle. Honestly, you wouldn't even know how to fire it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1099,10 +1099,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-101"/>
+      <child nodeId="node-203"/>
     </children>
   </item>
-  <item nodeId="node-101">
+  <item nodeId="node-203">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Until now you were considered peaceful. Taking a foreign gun in the middle of a foreign building could change that impression. Think good before taking it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
