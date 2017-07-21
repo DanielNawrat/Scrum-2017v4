@@ -1,5 +1,6 @@
 "On the Lookout" by Daniel, Franziska, Tim, Kevin, Tobias
 
+Release along with a website and an interpreter.
 
 [Anchor rooms Testsection]
 
@@ -1959,7 +1960,7 @@ Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
-	Figure of Crash Zone_Kaldríss is the file "4.jpg".
+	Figure of Crash Zone_Kaldríss is the file "background_kaldriss.png".
 		
 	The room-illustration of Crash Zone_Kaldríss is the Figure of Crash Zone_Kaldríss.
 
