@@ -11,21 +11,21 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>123</integer>
+        <key>Line</key><integer>126</integer>
         <key>Title</key><string>Chapter 1 - Sitis</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>397</integer>
+        <key>Line</key><integer>400</integer>
         <key>Title</key><string>Chapter 2 - Gaisetto</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>738</integer>
+        <key>Line</key><integer>728</integer>
         <key>Title</key><string>Chapter 3- Geysiria</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
@@ -39,49 +39,49 @@
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>831</integer>
+        <key>Line</key><integer>849</integer>
         <key>Title</key><string>SECTION 2 - OCEAN REGION</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>903</integer>
+        <key>Line</key><integer>1000</integer>
         <key>Title</key><string>SECTION 3 - VOLCANO AREA</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>1052</integer>
+        <key>Line</key><integer>1224</integer>
         <key>Title</key><string>Chapter 4 - Frizza</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>1767</integer>
+        <key>Line</key><integer>2063</integer>
         <key>Title</key><string>Chapter 5 - Kaldríss</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>1769</integer>
+        <key>Line</key><integer>2065</integer>
         <key>Title</key><string>Section 1 - Crash Site</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>1991</integer>
+        <key>Line</key><integer>2316</integer>
         <key>Title</key><string>Section 2 - Yetíss Cave System</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Source/story.ni</string>
-        <key>Line</key><integer>2100</integer>
+        <key>Line</key><integer>2459</integer>
         <key>Title</key><string>Section 4 - Blakkríss Temple</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
@@ -1042,6 +1042,286 @@
         <key>Line</key><integer>212</integer>
         <key>Title</key><string>Section - Color effects (for Z-machine only)</string>
         <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>149</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 9 of Simple Graphical Window (for Glulx only) by Emily Short begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>150</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>7</integer>
+        <key>Title</key><string>Section 1 - Creating Rocks and Building the Window Itself</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>151</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>25</integer>
+        <key>Title</key><string>Section 2 - Items to slot into HandleGlkEvent and IdentifyGlkObject</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>152</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>64</integer>
+        <key>Title</key><string>Section 3 - Inform 6 Routines for Drawing In Window</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>153</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>208</integer>
+        <key>Title</key><string>Section 4 - Inform 7 Wrappers for Defining Window and Colors</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>154</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>225</integer>
+        <key>Title</key><string>Section 4a - More Wrappers (for use without Collage Tools by Emily Short)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>155</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>247</integer>
+        <key>Title</key><string>Section 5 - Inform 7 Wrapper Rulebook for Picture Selection</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>156</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/simple graphical window.i7x</string>
+        <key>Line</key><integer>255</integer>
+        <key>Title</key><string>Section 6 - Inform 7 Wrapper Phrases and Rules for Drawing</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>157</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/emily short/location images.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Location Images (for Glulx only) by Emily Short begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>158</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 4 of Automap by Mark Tilford begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>159</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>5</integer>
+        <key>Title</key><string>Section 1 - Global constants, Memory management, Kinds, and verbs</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>160</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>285</integer>
+        <key>Title</key><string>Section 2 - Exploration - determining how rooms should be placed relative to each other</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>161</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>376</integer>
+        <key>Title</key><string>Section 3 - Drawing the map - Writing to the character array</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>162</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>717</integer>
+        <key>Title</key><string>Section 4 - Displaying the map</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>163</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>898</integer>
+        <key>Title</key><string>Section 5 - Hyperlink specific stuff (for use with Basic Hyperlinks by Emily Short)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>164</key><dict>
+        <key>Filename</key><string>/Users/kevinkoch/Library/Inform/Extensions/mark tilford/automap.i7x</string>
+        <key>Line</key><integer>927</integer>
+        <key>Title</key><string>Section 99 - Debug verbs - Not for release</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>165</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 10/140425 of Glulx Entry Points (for Glulx only) by Emily Short begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>166</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>7</integer>
+        <key>Title</key><string>Section - Use option</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>167</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>18</integer>
+        <key>Title</key><string>Section - New rulebooks</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>168</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>37</integer>
+        <key>Title</key><string>Section - Global variables</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>169</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>47</integer>
+        <key>Title</key><string>Section - Gestalts</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>170</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>92</integer>
+        <key>Title</key><string>Section - IdentifyGlkObject routine</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>171</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>124</integer>
+        <key>Title</key><string>Section - Event types</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>172</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>131</integer>
+        <key>Title</key><string>Section - Events dependent on the player</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>173</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>136</integer>
+        <key>Title</key><string>Section - Wrappers for event structure, return values, etc</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>174</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>163</integer>
+        <key>Title</key><string>Section - Event Handling</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>175</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>183</integer>
+        <key>Title</key><string>Section - HandleGlkEvent routine</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>176</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>198</integer>
+        <key>Title</key><string>Section - Useful function wrappers</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>177</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>207</integer>
+        <key>Title</key><string>Section - The glulx input handling rulebook</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>178</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>241</integer>
+        <key>Title</key><string>Section - Debounce arrange events - unindexed</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>179</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>296</integer>
+        <key>Title</key><string>Section - Command-counting rules</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>180</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>305</integer>
+        <key>Title</key><string>Section - Input-cancelling rules</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>181</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>320</integer>
+        <key>Title</key><string>Section - Command showing rules</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>182</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx entry points.i7x</string>
+        <key>Line</key><integer>333</integer>
+        <key>Title</key><string>Section - Command pasting rules</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>183</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx text effects.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 5/140516 of Glulx Text Effects (for Glulx only) by Emily Short begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>184</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx text effects.i7x</string>
+        <key>Line</key><integer>11</integer>
+        <key>Title</key><string>Chapter - Specifying styles</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>185</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx text effects.i7x</string>
+        <key>Line</key><integer>26</integer>
+        <key>Title</key><string>Section - The Table of User Styles definition</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>186</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx text effects.i7x</string>
+        <key>Line</key><integer>36</integer>
+        <key>Title</key><string>Chapter - Sorting the Table of User Styles</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>187</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx text effects.i7x</string>
+        <key>Line</key><integer>80</integer>
+        <key>Title</key><string>Chapter - Setting the styles - unindexed</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>188</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/glulx text effects.i7x</string>
+        <key>Line</key><integer>188</integer>
+        <key>Title</key><string>Chapter - Additional style phrases</string>
+        <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
 </dict></plist>

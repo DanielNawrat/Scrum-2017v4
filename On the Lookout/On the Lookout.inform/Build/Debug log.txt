@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app/Contents/Resources/In
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 27272 words long.
+I've now read your source text, which is 34900 words long.
 
 
 -----------------------------------------------------
@@ -24,6 +24,11 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 42655 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
+I've also read Simple Graphical Window by Emily Short, which is 1935 words long.
+I've also read Location Images by Emily Short, which is 237 words long.
+I've also read Automap by Mark Tilford, which is 6895 words long.
+I've also read Glulx Entry Points by Emily Short, which is 2682 words long.
+I've also read Glulx Text Effects by Emily Short, which is 2182 words long.
 
 
 -----------------------------------------------------
@@ -92,35 +97,35 @@ Phase VII ... First pass through assertions
      == region
     Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
      == region
-    Regional: CONSTANT_VNT'the coast'-region()(I166'coast')
+    Regional: CONSTANT_VNT'the coast'-region()(I208'coast')
      == region
-    Regional: CONSTANT_VNT'the coast'-region()(I166'coast')
+    Regional: CONSTANT_VNT'the coast'-region()(I208'coast')
      == region
-    Regional: CONSTANT_VNT'the coast'-region()(I166'coast')
+    Regional: CONSTANT_VNT'the coast'-region()(I208'coast')
      == region
-    Regional: CONSTANT_VNT'the coast'-region()(I166'coast')
+    Regional: CONSTANT_VNT'the coast'-region()(I208'coast')
      == region
-    Regional: CONSTANT_VNT'the coast'-region()(I166'coast')
+    Regional: CONSTANT_VNT'the coast'-region()(I208'coast')
      == region
-    Regional: CONSTANT_VNT'the coast'-region()(I166'coast')
+    Regional: CONSTANT_VNT'the coast'-region()(I208'coast')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
-    Regional: CONSTANT_VNT'the volcano_area'-region()(I176'volcano_area')
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I221'volcano_area')
      == region
 
 
@@ -176,6 +181,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.6 ... Compiling first block of phrases ====
 
+            0 = texts valued property. 1 = text
                                 Fail: thing (~) thing = nothing
                                 Fail: thing (~) thing = nothing
                                 Fail: thing (~) thing = nothing
@@ -206,6 +212,7 @@ Phase XII ... Code generation
                                 Fail: thing (~) thing = nothing
                                 Fail: thing (~) thing = nothing
                                 Fail: thing (~) thing = nothing
+            0 = texts valued property. 1 = text
 
 
 ==== Phase XII.7 ... Compiling the rulebooks ====
@@ -273,8 +280,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 112 files written as streams.
-CPU time: 257 centiseconds
+Total of 135 files written as streams.
+CPU time: 334 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
