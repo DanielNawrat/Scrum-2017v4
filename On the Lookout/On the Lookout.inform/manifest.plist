@@ -4,6 +4,37 @@
     <dict>
         <key>Graphics</key>
         <dict>
+<<<<<<< HEAD
+=======
+            <key>3</key>
+            <string>Figures\background_frizza.png</string>
+            <key>4</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>5</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>6</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>7</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>8</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>9</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>10</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>11</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>12</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>13</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>14</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>15</key>
+            <string>Figures\background_kaldriss.png</string>
+            <key>16</key>
+            <string>Figures\background_kaldriss.png</string>
+>>>>>>> 09ee5fcc521f4bd9e3ab0889e7d00472f69c4eb2
         </dict>
     </dict>
 </plist>

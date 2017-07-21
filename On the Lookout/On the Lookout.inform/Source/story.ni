@@ -1,5 +1,7 @@
 "On the Lookout" by Daniel, Franziska, Tim, Kevin, Tobias
 
+Release along with a website and an interpreter.
+
 [Anchor rooms Testsection]
 
 The Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are rooms. Anchors is a region. Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are in the Anchors.
@@ -51,6 +53,7 @@ extract -	extract a sample from the Flux Current[line break]
 Kaldríss[line break]
 open/close (something)[line break]
 unlock/lock (something)[line break]
+push button - pushing a button[line break]
 insert (something) into (something)[line break]
 remove (something) from (something)[line break]
 shove (something) aside - some situations with blocked paths may require this[line break]
@@ -140,7 +143,19 @@ The Landing Zone_Sitis is a region. The Flat Rock_Sitis is in the Landing Zone_S
 [1. Raum]
 The Flat Rock_Sitis is a room. The printed name of the Flat Rock_Sitis is "Your arrival point. The Flat Rock". "You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away [bold type]in the east[roman type] you recognise some kind of different rooftops. Maybe someones living there who could help you?"
 
-[Beschreibungen für andere Himmelsrichtungen?]
+[Warum funktioniert das nicht?]
+[Instead of going north from the Flat Rock_Sitis:
+	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	do nothing;
+	
+Instead of going south from the Flat Rock_Sitis:
+	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	do nothing;
+	
+Instead of going west from the Flat Rock_Sitis:
+	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	do nothing;]
+
 
 [Region 2 - The Desert of Sitis]
 The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
@@ -157,14 +172,22 @@ The description of the wooden gate is "It seems to be closed. [bold type]Let's t
 
 The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "Rock Mine". The Description of the Rock Mine_Sitis is "". The Rock Mine_Sitis is east of the Wide Desert of Sitis_Sitis.
 
+Instead of going north from the Wide Desert of Sitis_Sitis:
+	say "Ouch! It hurts. Apparently, you needs to feel that you are not able to pass the barbed wire fence.";
+	do nothing;
+
+Instead of going east from the Wide Desert of Sitis_Sitis:
+	say "At the moment, there's nothing that could help you out there. You need humans to go on.";
+	do nothing;
+	
 The Person behind the door_Sitis is a person. The Person behind the door_Sitis is in the Agora_Sitis. The printed name of the Person behind the door_Sitis is "the faceless guardian". 
 
 Instead of opening the wooden gate:
-	say "Someone is yelling at you. [italic type]'Who are you? And what do you want?'[roman type]";
+	say "Someone is yelling at you. [italic type]'Who are you? What is your name?'[roman type]";
 	now the Person behind the door_Sitis is in the Rampart around Sicuum_Sitis.
 	
 After answering that "Axesto":
-	say "[italic type]I am Axesto, an alien of the planet Fidatis. I landed here because I am travelling through the whole galaxy to discover the life on other plantes. During the landing here, two of my water containers broke down. That's why I need you to ask for water. Can you give me a bit, please? [roman type][paragraph break]";
+	say "[italic type]'I am Axesto, an alien of the planet Fidatis. I landed here because I am travelling through the whole galaxy to discover the life on other plantes. During the landing here, two of my water containers broke down. That's why I need you to ask for water. Can you give me a bit, please?' [roman type][paragraph break]";
 	say "First there's silence. Then the gate squeaks. [bold type]It opens slowly.[roman type]";
 	now the wooden gate is open;
 	remove the Person behind the door_Sitis from play;
@@ -172,9 +195,7 @@ After answering that "Axesto":
 	now the description of the wooden gate is "open."
 
 The Protection Bridge_Sitis is a room. The printed name of the Protection Bridge_Sitis is "The Protection Bridge". 
-The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis. [Beschreibung fehlt; nicht zwangsläufig - Beschreibung ist eigentlich im Dialog enthalten.]
-
-[Beschreibungen für andere Himmelsrichtungen?]
+The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis.
 
 
 [Region 3 - The Village Sicuum]
@@ -182,44 +203,58 @@ The Village Sicuum_Sitis is a region. The printed name of the Village Sicuum_Sit
 The Agora_Sitis, the Domum Praesidium_Sitis, the Shelter_Sitis, the Secret Passage_Sitis and Mitéra's Room_Sitis are in the Village Sicuum_Sitis. 
 
 [Räume]
-The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "You enter the wooden gate. Finally, you do not just expect other people, rather you see them. The Sitisianer, that is how they are called, looks different then you. They are taller, with longer legs and shorter necks. Also they definitely got more hair. But their faces seems to be drawn by life. You really do not know how to connect to these people without scaring them. You should [bold type]look[roman type] around for the one who has opened the gate for you."
+The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "Brisky bustle dominates this place. People are talking, buying things on the market and kids are playing with each other. No one is carrying about you. But right in the middle of this huddle, you realize a boy staring at you. He hides a bit behind one of those market booth. His view radiates a mixture of fear and fascination. Maybe you break the ice between you two, [bold type]if you friendly waves him?[roman type]"
 
-After looking in the Agora_Sitis for the first time:
-	say "You realize a boy staring at you. His name must be [bold type]Anaidis[roman type] because someone calls him [italic type]'Anaidis, catching is about running after the other ones, not staring around!' [roman type]What about [bold type]connecting to him[roman type]?";
-	now Anaidis_Sitis is in the Agora_Sitis;
-	now the description of the Agora_Sitis is "";
+Anaidis_Sitis is a person. The printed name of Anaidis_Sitis is "the hiding boy". Anaidis_Sitis is in the Agora_Sitis.
 
-	[Description muss weg!]
+Waving the hiding boy is an action applying to nothing.
+Understand "wave the hiding boy" as waving the hiding boy.
 
-After examining Anaidis_Sitis the first time:
-	say "The boy takes a step back. He radiates a mixture of fear and fascination. [italic type]'You have spoken about finding water. You will [bold type]not be successful[roman type] here.'[roman type]"
+After waving the hiding boy for the first time:
+	say "First, nothing happens. But then, he smiles. And a few seconds later, he already stands directly in front of you and babbles cheerfully. [paragraph break][italic type]'Hi, I am Anaidis. First I thought you could be an enemy, but as I finked through the keyhole, I saw how funny you look. And such a funny-looking thing could never be dangerous. But I also did not wanted to 'out me straight as the guardian'. That's why I've hidden first. Oh boy! I just can repeat: You look so so funny. With your long neck and your thick round belly. And what about your non-existing legs? You just have feet. Did you already knew you have no legs? Aaaaaaand no hair! Oh, oh! And the way you walk, or should I say waddle, is just too amusing.'[roman type][paragraph break]";
+	say "You are not quite sure how to react to this statement. The moment you want to riposte something, the boy already yells around.[paragraph break]";
+	say "[italic type]'Hey everyone! Look what we got here.[roman type]'[paragraph break]";
+	say "People suddenly crowd around you. Without any scepticism. They consider you from all aspects, persuade you in a muddle. [italic type]'What are you?, 'How did you came here?' and 'I've never seen something like you.'[roman type] You start getting nervous. Anaidis seems to see this.[paragraph break]";
+	say "[italic type]'Hey, hey. People. Stop examining him like an unknown disease. His name is Axesto. He is an alien from the planet Fidatis. Right?'[roman type][paragraph break]";
+	say "You nod.[paragraph break]";
+	say "'[italic type]As he has landed here, two of his water containers broke down. Now he needs a bit water to be able to continue his journey from planet to planet.'[roman type][paragraph break]";
+	say "It becomes more silent. [italic type]'Water, huh?'[roman type], someone out of the crowd asks. Their faces darkens. Abruptly the whole euphoria the people have had about you has been gone. Anaidis also seems thoughtful. Few seconds later, he mentions, that you are not going to be successfull here concerning your water quest. Except you will fight for it. You are confused. On the one hand it's said, you won't get water, on the other hand, apparently you can fight for it. [bold type]In generell - what's the matter about this fight. Probably, you should ask Anaidis.[roman type]";
+	now the printed name of Anaidis_Sitis is "Anaidis";
 	
-	[Description "You see nothing about..." muss weg!]
-
-
+	
+	
 [Dialogtabelle]
 
 Table of Anaidis_Sitis Responses
 Topic	Response
-"no success"	"But why not? You are all living here. A whole village. You would not survive without water. [paragraph break]"
+"the fight"	"What does that mean: I have to fight for water? Why and against whom?[paragraph break]"
 "scorpius" 	"What is going on here? Who is this Scorpius?[paragraph break]"
 
-After asking Anaidis_Sitis about "no success":
-	say "Anaidis shakes his head. [italic type]'I have never said we do not have any water here. Of course we do need water to survive. But we also need to fight for it. That's the reason we're not giving it away easily. Especially not to total strangers.[roman type][paragraph break]";
-	say "You are not quite sure how to react to Anaidis statement. He seems to see this. So he starts to smile and mentions [italic type]'Don't worry - it's less about you. It's more about our history. I know someone who could make you understanding these things. Come with me!' [roman type] Anaidis [bold type]walks west[roman type] to a huge hut. Follow him!";
-	now the printed name of Anaidis_Sitis is "Anaidis";
-	now Scorpius_Sitis is in the Agora_Sitis;
-	now Machitikos_Sitis is in the Agora_Sitis;
+After asking Anaidis_Sitis about "the fight" for the first time:
+	say "[italic type]'I know someone who is the right person to give you the right answers and does make you understand this story. Come with me!'[roman type][paragraph break]";
+	say "[bold type]Anaidis walks west to a huge hut.[roman type] Follow him!";	
 	now Anaidis_Sitis is in Mitéra's Room_Sitis;
+	now the printed name of Anaidis_Sitis is "Anaidis";
+	now the description of the Agora_Sitis is "";
+		
+Instead of going east from the Agora_Sitis:
+	say "You are looking at a lovely small sand house. It looks cozy as a sand house is able to look cozy, but the moment you want to enter a young beautiful woman is blocking your way.[paragraph break]";
+	say "[italic type]'Kiddo, that's the wrong way. You really need to follow Anaidis. I know where he wants to take you and believe me - no one knows our story better then this women does.'[roman type]";
+	do nothing;
 	
-Anaidis_Sitis is a person. Anaidis_Sitis is in the Shelter_Sitis. The printed name of Anaidis_Sitis is "The staring boy". 
-Scorpius_Sitis is a person in the Shelter_Sitis. The printed name of Scorpius_Sitis is "The Great Scorpius". 
+Scorpius_Sitis is a person in the Shelter_Sitis. The printed name of Scorpius_Sitis is "the Great Scorpius". 
 Machitikos_Sitis is a person in the Shelter_Sitis. The printed name of Machitikos_Sitis is "Machitikos". 
 
 The Domum Praesidium_Sitis is a room. The printed name of the Domum Praesidium_Sitis is "The Domum Praesidium of Sicuum". The Domum Praesidium_Sitis is west of The Agora_Sitis. 
-The description of the Domum Praesidium_Sitis is "As you enter, you see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. So, this huge sandy hut seems to have an official function. During you are still thinking about to whom you are going to speak right now, Anaidis already walks [bold type]straight ahead[roman type] into a smaller room. Hurry up! Otherwise you maybe going to lose him."
+The description of the Domum Praesidium_Sitis is "You enter the Domum Praesidium of Sicuum. You see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. So, this huge sandy hut seems to have an official function. During you are still thinking about to whom you are going to speak right now, [bold type]Anaidis already walks west into a smaller room.[roman type] Hurry up. Otherwise you maybe going to lose him."
 
-Mitéra's Room_Sitis is a room. The printed name of Mitéra's Room_Sitis is "Mitéra's Room". Mitéra's Room_Sitis is north of the Domum Praesidium_Sitis.
+Following Anaidis_Sitis is an action applying to nothing.
+Understand "follow Anaidis_Sitis" as following Anaidis_Sitis.
+
+After following Anaidis_Sitis for the first time:
+	now Axesto is in Mitéra's Room_Sitis;
+
+Mitéra's Room_Sitis is a room. The printed name of Mitéra's Room_Sitis is "Mitéra's Room". Mitéra's Room_Sitis is west of the Domum Praesidium_Sitis.
 
 Mitéra_Sitis is a person in Mitéra's Room_Sitis. The printed name of Mitéra_Sitis is "Mitéra". The description of Mitéra_Sitis is "Mitéra is a small and wrinkled woman. At the moment she lies on a narrow enhancement out of stone. It seems to be her bed. Anaidis kneels on the ground next to her whispering something incomprehensible. Suddenly, she gets up, actuates you and then her eyes lighten up. [italic type][paragraph break]'Hello stranger! My name is Mitéra, I am the protectress of my loved ones here in Sicuum. Anaidis mentioned you are searching for water. Is that right?'[roman type]"
 
@@ -230,11 +265,10 @@ After examining Mitéra_Sitis for the first time:
 	now the description of Mitéra_Sitis is "The old woman is friendly looking at you.";
 	now Anaidis_Sitis is in the Agora_Sitis;
 	now the description of the Domum Praesidium_Sitis is "Anaidis is outside at the Agora.";
-	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see, how the people are reacting to him. So use your chance, ask Anaidis about.";
+	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see how the people are reacting to him. But first, you need to grind out your way to Anaidis. He's hiding - again - behind one market booth. Luckily you are very small, so you are able to sneak through the crowd of people easily. The boy is totally focused on everything, but you. But you can't wait any longer. You wanna know the whole story about this Scorpius. [bold type]Go ask him![roman type]";
 	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
-	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing."
+	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But in the east you spot a tree thicket with some old dry trees.[roman type] They are kind of perfect protection with their knotted treetop. Specially because you are small, light and with long claws - the best premises for climbing.";
 	
-
 The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
 
 The Rock Mine Tree_sitis is a thing. The Rock Mine Tree_sitis is not portable. The description of the Rock Mine Tree_sitis is "Perfect! It's the perfect abditory to conquer Machitikos from the ambush." The Rock Mine Tree_sitis is in the Tree Thicket_Sitis. The printed name of the Rock Mine Tree_sitis is "Rock Mine tree". 
@@ -263,16 +297,29 @@ After attacking Machitikos the first time:
 
 
 After asking Anaidis_Sitis about "scorpius":
-	say "Anaidis whispers, [italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to try to survive one week without new water. And everyone who is trying to steal it or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, [bold type]your only chance is to fight against this warrior Machitikos.[roman type][paragraph break]";
-	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. But you feel determined - you are going to beat him. For yourself and for the repressed Sitisianer. [bold type]You step directly in front of the great Scorpius.[roman type]"
+	say "Anaidis whispers.[paragraph break]";
+	say "[italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to survive one week without new water. And everyone who is trying to steal or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, your only chance is also to fight against his warrior Machitikos. Are you going to?[roman type][paragraph break]";
+	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. The chance that you will beat him seems slightly. Too slightly. But anyhow you feel determined - you really wanna overmatch Machitikos. For yourself and for the repressed Sitisianer. You step directly in front of Scorpius.[paragraph break]";
+	say "Scorpius is sitting on an amazingly big wooden throne. To be seen as Machitikos first opponent, you need to [bold type]step in front of Scorpius[roman type], where everyone can see you.";
+	now Scorpius_Sitis is in the Agora_Sitis;
+	
+	
+Stepping in front of Scorpius_Sitis is an action applying to nothing.
+Understand "step in front of Scorpius" as stepping in front of Scorpius_Sitis.
 
-After examining Scorpius_Sitis for the first time:
-	say "Scorpius sits on a high wooden throne. [italic type]'What do you want? You little deformed bastard?!'[roman type] You answer assertive. [italic type][paragraph break]'I wanna fight. I wanna fight against your bastard Machitikos.'[roman type][paragraph break]";
-	say "All the people around you start whispering fluttered. Scorpius stares at you incredulous. [italic type][paragraph break]'So... go on. Abortion![roman type]";
+After stepping in front of Scorpius_Sitis for the first time:
+	say "It needed a few seconds until the great Scorpius perceives you.[paragraph break]";
+	say "[italic type]'What do you want? You little deformed bastard?!'[roman type] [paragraph break]";
+	say "You answer assertive.[paragraph break]";
+	say "[italic type]'I wanna fight. I wanna fight against Machitikos.'[roman type][paragraph break]";
+	say "All the people around you start whispering fluttered. Scorpius stares at you incredulously. Then starts smiling devilishly.[paragraph break]";
+	say "[italic type]'So... go on. Abortion![roman type][paragraph break]";
+	say "Suddenly the mentioned warrior is standing right next to you.";
+	now Machitikos_Sitis is in the Agora_Sitis;
 
-
+[You see nothing special about Machitikos - Fehler - wie beheben?]
 After examining Machitikos_Sitis for the first time:
-	say "Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. [bold type]Which one do you take[italic type]?";
+	say "Machitikos does not say a word. He just grunts aggressively and throws two weapons in front of you: a long sharp spear and a huge spiked mace. [bold type]Which one do you take?[italic type]";
 	now the Spear_Sitis is in the Agora_Sitis;
 	now the Spiked Mace_Sitis is in the Agora_Sitis;
 
@@ -301,8 +348,8 @@ After climbing on the Rock Mine Tree_Sitis for the first time:
 	now Machitikos_Sitis is in the Tree Thicket_sitis;
 	now the description of Machitikos_Sitis is "";
 	
-Attacking Machitikos is an action applying to nothing.
-Understand "attack Machitikos" as attacking Machitikos.
+[Attacking Machitikos is an action applying to nothing.
+Understand "attack Machitikos" as attacking Machitikos.]
 
 After attacking Machitikos the first time:
 	say "With an epic jump, holding the spear in the air, you fall on Machitikos muscly back. He shrieks, as your weapon pierces into his chest. You let up on him, he falters and falls![paragraph break]";
@@ -343,51 +390,7 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 
 [Charaktere]
 Carissimi_Sitis is a person in the Shelter_Sitis.The printed name of Carissimi_Sitis is "Carissimi".
-Ilithios_Sitis is a person. The printed name of Ilithios_Sitis is "Ilithios". 
-
-
-[instead of going nowhere from xy, say ]
-[Bei Namen Planet weg]
-
-
-
-[[Variables]	
-
-BlooSympathy is a truth state that varies. BlooSympathy is true.
-ConcealedDunia is a truth state that varies. ConcealedDunia is true.
-Helplesness is a truth state that varies. Helplesness is false.
-CloakWearing is a truth state that varies. CloakWearing is false. 
-A thing can be examined or unexamined.
-The carrying capacity of the player is 3.
-
-[---]
-
-
-After asking Dunia about anything:
-	if Dunia is in the Ascent_Frizza:
-		say "[if we have not examined Dunia][italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[otherwise][italic type]- Answer my question first. What is your [bold type]name[roman type]?[end if]";
-		now ConcealedDunia is false;
-	else:
-		continue the action.
-		
-After examining Dunia for the first time:
-	if Dunia is in the Ascent_Frizza:
-		if ConcealedDunia is true:
-			say "[italic type]- You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
-			now ConcealedDunia is false.]
-	
-
-
-
-
-
-
-
-
-
-
-
-
+Ilithios_Sitis is a person. The printed name of Ilithios_Sitis is "Ilithios".
 
 
 
@@ -717,19 +720,6 @@ After taking food:
 After going to the landingzone_gaisetto:
 	if the player carries food:
 		say "finally you found somethink to eat and you leave the planet!".]
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1089,19 +1079,19 @@ Instead of going nowhere from the Bloo City_Frizza, say "Daunting planes and dar
 The Orbit_Frizza is above the Landing Zone_Frizza. The printed name of Orbit_Frizza is "Orbit".
 	Instead of going to the Orbit_Frizza, do nothing.
 	
-The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there." 
+The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there." 
 
 After going from the Landing Zone_Frizza:
-	if Dunia is in the Ascent_Frizza:
-		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there.";
+	if ConcealedDunia is true:
+		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there.";
 		produce a room description with going spacing conventions;
 	else:
-		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south-west [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. ";
+		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. ";
 		produce a room description with going spacing conventions.
 	Instead of going to the Tunnels_Frizza from the Landing Zone_Frizza, say "After looking around a bit you disover a fairly well hidden hatch. It seems to be open at the moment."
 
 [Flux]
-The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. You don't know if it's a good idea to approach it further.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop."
+The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux before the Gate".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. A huge [bold type]rock[roman type] loosely stands at the current's shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop."
 	After going from the Surface Flux_Frizza:
 		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop.";
 		produce a room description with going spacing conventions.
@@ -1113,15 +1103,15 @@ The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the S
 		produce a room description with going spacing conventions.
 
 [Mountain]
-The Ascent_Frizza is a room. The Ascent_Frizza is east of the Landing Zone_Frizza. The printed name of the Ascent_Frizza is "Ascent".  The description of the Ascent_Frizza is "The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding [bold type]up[roman type]. There is no clue on where it might lead, but you could find out.[paragraph break]You can also go [bold type]west[roman type], back to the Landing Zone"
+The Ascent_Frizza is a room. The Ascent_Frizza is east of the Landing Zone_Frizza. The printed name of the Ascent_Frizza is "Ascent".  The description of the Ascent_Frizza is "The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding [bold type]up[roman type], at the beginning of which are small pillars - one marked with an insignia.[roman type]. There is no clue on where it might lead, but you could find out.[paragraph break]You can also go [bold type]west[roman type], back to the Landing Zone"
 
 After going from the Ascent_Frizza:
-		now the description of the Ascent_Frizza is "The foot of the mountain. [paragraph break]A narrow path leads [bold type]up[roman type]wards. You can also go [bold type]west[roman type], back to the Landing Zone.";
+		now the description of the Ascent_Frizza is "The foot of the mountain. [paragraph break]A narrow path leads [bold type]up[roman type]wards. At the beginning of the steps are small pillars - one marked with an insignia. You can also go [bold type]west[roman type], back to the Landing Zone.";
 		produce a room description with going spacing conventions.
 
 The Plateau_Frizza is a room. The Plateau_Frizza is above the Ascent_Frizza. The printed name of the Plateau_Frizza is "Plateau".
 Instead of going up from the Ascent_Frizza:
-	if Dunia is not in the Ascent_Frizza:
+	if BlooSympathy is true:
 		say "You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around. Maybe [bold type]looking[roman type] around would reveal whoever is hiding.";
 		now Dunia is in the Ascent_Frizza;
 	else:
@@ -1133,20 +1123,20 @@ The Sanctuary_Frizza is a room. The Sanctuary_Frizza is east of the Plateau_Friz
 [Upper Region]
 The Upper Desert_Frizza is a room. The Upper Desert_Frizza is north of the Landing Zone_Frizza. The printed name of the Upper Desert_Frizza is "Wasteland". The description of the Upper Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.[paragraph break]You can go [bold type]west[roman type], to the Flux Gate, [bold type]north[roman type], to the edge of the city, and [bold type]south[roman type], back to the Landing Zone."
 After going from the Upper Desert_Frizza:
-		now the description of the Upper Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], to the Flux behind the gate, [bold type]north[roman type], to the edge of the city, and [bold type]south[roman type], back to the Landing Zone.";
+		now the description of the Upper Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], to the Flux Gate, [bold type]north[roman type], to the edge of the city, and [bold type]south[roman type], back to the Landing Zone.";
 		produce a room description with going spacing conventions.
 		
 The Upper Gate_Frizza is a room. The Upper Gate_Frizza is west of the Upper Desert_Frizza. The printed name of the Upper Gate_Frizza is "Flux Gate". The description of the Upper Gate_Frizza is "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
 After examining the Upper Gate_Frizza, say "An archlike structure stands out against the vastness of the planes. As you approach you become aware of some figures in front of the structure. Strangely, it looks like they were glowing bluishly. At second glance they seem hardly human, you don't know how they will react to your appearance. [paragraph break]You can go [bold type]east[roman type]. [paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
 After going from the Upper Gate_Frizza:
-		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland";
+		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 		produce a room description with going spacing conventions.
 	Instead of going to the Lower Gate_Frizza from the Upper Gate_Frizza, say "They won't let you pass."
 	
 [Bloo City]
-The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], to the Flux behind the gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland."
+The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], to the Flux behind the Gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland."
 After going from the Verge_Frizza:
-		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], to the Flux behind the gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland.";
+		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], to the Flux behind the Gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland.";
 		produce a room description with going spacing conventions.
 	Instead of going to the Central Plaza_Frizza from the Verge_Frizza, say "You can't even say for sure if they will speak to you before killing you. It would be unwise to approach."
 	
@@ -1228,15 +1218,23 @@ When play begins:
 
 [Image Testsection]
 
-[Include Simple Graphical Window by Emily Short.
+Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
-	Figure of Landing Zone_Frizza is the file "wallhaven-94691.jpg".
-	Figure of Upper Desert_Frizza is the file "Surface.png".
+	Figure of Frizza is the file "background_frizza.png".
 	
-	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
-	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.]
+	The room-illustration of Landing Zone_Frizza is the Figure of Frizza.
+	The room-illustration of Upper Desert_Frizza is the Figure of Frizza.
+	The room-illustration of Lower Desert_Frizza is the Figure of Frizza.
+	The room-illustration of Scoop_Frizza is the Figure of Frizza.
+	The room-illustration of Surface Flux_Frizza is the Figure of Frizza.
+	The room-illustration of Upper Gate_Frizza is the Figure of Frizza.
+	The room-illustration of Verge_Frizza is the Figure of Frizza.
+	The room-illustration of Surface Flux 2_Frizza is the Figure of Frizza.
+	The room-illustration of Ascent_Frizza is the Figure of Frizza.
+	The room-illustration of Flux Core_Frizza is the Figure of Frizza.
+	
 	
 [--]
 
@@ -1251,31 +1249,42 @@ The carrying capacity of the player is 3.
 
 [---]
 
+There is an Insignia in the Ascent_Frizza. The description of the Insignia is "A clear 'D', printed in a strong blue.  It was painted on one of the cornerstones at the beginning of the steps - by humans, as far as you can estimate." The Insignia is scenery and fixed in place.
+
+Instead of looking:
+	if the player is in the Ascent_Frizza:
+		produce a room description with going spacing conventions;
+		say "You can see an Insignia here.";
+	else:
+		continue the action.
 
 After asking Dunia about anything:
 	if Dunia is in the Ascent_Frizza:
 		if BlooSympathy is true:
-			say "[if we have not examined Dunia][italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[otherwise][italic type]Answer my question first. What is your [bold type]name[roman type]?[end if]";
+			say "[if we have not examined Dunia][italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[else if NameAnswerD is false][italic type]Answer my question first. What is your [bold type]name[italic type]?[else if NameAnswerD is true][italic type]There's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?[end if]";
 			now ConcealedDunia is false;
 		if BlooSympathy is false:
 			say "[italic type]Begone with you! I don't want anything to do with that!";
 	else:
 		continue the action.
 		
+
 After examining Dunia for the first time:
 	if Dunia is in the Ascent_Frizza:
 		if ConcealedDunia is true:
 			say "[italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
 			now ConcealedDunia is false.
-			
+		
+NameAnswerD is a truth state that varies. NameAnswerD is false. 	
 	
 After answering Dunia that "Axesto":
 	 if Dunia is in the Ascent_Frizza:
 		if BlooSympathy is true:
 			say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?";
+			now NameAnswerD is true;
 		else:
 			say "[italic type]Begone with you! I don't want anything to do with that!"
-
+			
 
 [Duju]
 After answering Dunia that "Duju" for the first time:
@@ -1285,7 +1294,7 @@ After answering Dunia that "Duju" for the first time:
 		now Dunia is in the Upper Gate_Frizza;
 		now Du'un is in the Upper Gate_Frizza;
 		now the printed name of Dunia is "Dunia";
-		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressive sized person, already bellowing a few direct words with a booming voice.[line break][line break][italic type]Dunia! Who is this? Explain yourself![line break][line break]A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has a slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.[line break][line break][roman type]Both eyeball you thoroughly for what seems to you like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you.[line break][line break][italic type]Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.[line break][line break][roman type] They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
+		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.[line break][line break][italic type]Dunia! Who is this? Explain yourself![line break][line break]A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.[line break][line break][roman type]Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.[line break][line break][italic type]Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.[line break][line break][roman type] They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
 		now Dunia is in the Lower Gate_Frizza;
 		now Du'un is in the Lower Gate_Frizza;
 		now Duju Operator 2 is in the Upper Gate_Frizza;
@@ -1341,14 +1350,14 @@ Instead of taking the gun for the second time:
 The console is unexamined.
 
 Before examining the console for the first time:
-	now the description of the console is "A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. [paragraph break]As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.[paragraph break]Anyhow, you could [bold type]examine[roman type] the console further."
+	now the description of the console is "A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. [paragraph break]As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.[paragraph break]Anyhow, you could [bold type]examine[roman type] the console further. Of course, you could also [bold type]wait [roman type] a little longer."
 
 Before examining the console for the second time:
-	now the description of the console is "After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... [paragraph break]As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could [bold type]examine[roman type] it further."
+	now the description of the console is "After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... [paragraph break]As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could [bold type]examine[roman type] it further. Of course, you could also [bold type]wait [roman type] a little longer."
 
 Before examining the console for the third time:
 	if the console is unexamined:
-		now the description of the console is "Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you await Dunia and Du'un to set you free.";
+		now the description of the console is "Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you should [bold type]wait[roman type] Dunia and Du'un to set you free.";
 	else:
 		now the description of the console is "You can't make out anything new, the Operators are ridiculously shy."
 	
@@ -1359,7 +1368,7 @@ After examining the console for the third time:
 Before doing something other than waiting in the Upper Gate_Frizza:
 	if Dunia is in the Lower Gate_Frizza:
 		if Helplesness is true:
-			say "In your present condition, that's hardly possible.";
+			say "In your present condition, that's hardly possible. All you can do right now is [bold type]wait[roman type].";
 			stop the action.
 [--]
 
@@ -1376,16 +1385,34 @@ After asking Duju Operator 2 about anything:
 [Waiting]
 A Flux Extractor is a container in the Lower Gate_Frizza. The description of the Flux Extractor is "It resembles some sort of high-tech fishing net, there are buttons and cables, you think you know how to operate it ... maybe." The Flux Extractor has a carrying capacity 2.
 
+Instead of doing anything with the Unregulated Flux Essence:
+	if the player is not in the Flux Core_Frizza:
+		say "You shouldn't be messing around with it. The Flux Extractor is all that keeps it from disintegrating everything around it.";
+	else:
+		continue the action.
+		
+Instead of doing anything with the Regulated Flux Essence:
+	if the player is not in the Flux Core_Frizza:
+		say "You shouldn't be messing around with it. The Flux Extractor is all that keeps it from disintegrating everything around it.";
+	else:
+		continue the action.
+		
+Instead of doing anything with the Pure Flux Essence:
+	if the player is not in the Landing Zone_Frizza:
+		say "It is your only way out of here. You should treat it as careful as possible.";
+	else:
+		continue the action.
+
 After waiting in the Upper Gate_Frizza for the first time:
 	if Helplesness is false:
-		say "You stand still where you were left. Time passes. However, that seems to be the only thing to change.";
+		say "You stand still where you were left. Time passes. However, that seems to be the only thing to change. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return.";
 	else:
-		say "You lie, waiting, contemplating your choices."
+		say "You lie, waiting, contemplating your choices. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return."
 After waiting in the Upper Gate_Frizza for the second time:
 	if Helplesness is false:
-		say "You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console.";
+		say "You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return.";
 	else:
-		say "Still you lie, your eyes fixed in position due to the fact that your head is fixed as well.  As if that wasn't enough, your punishers turned you to a rather unexciting corner of the room."		
+		say "Still you lie, your eyes fixed in position due to the fact that your head is fixed as well.  As if that wasn't enough, your punishers turned you to a rather unexciting corner of the room. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return."		
 After waiting in the Upper Gate_Frizza for the third time:
 	if the console is unexamined:
 		now Dunia is in the Upper Gate_Frizza;
@@ -1398,15 +1425,18 @@ After waiting in the Upper Gate_Frizza for the third time:
 		now Du'un is in the Upper Gate_Frizza;
 		say "Finally you hear steps approaching and a booming laughter.[paragraph break][italic type]A little snoopy, are we? Well, not the worst of traits. Hold still.[paragraph break][roman type]You hear clattering and feel your mobility returning. Stiffly you get up and see the two Duju standing before you. You think you recognize a bit of amusement in the eyes of the bigger one.[paragraph break][italic type]Don't worry, our guards are very cautious, and our Operators even more so, I am certain you meant no harm, if you would have, you wouldn't be here any more.[paragraph break]";
 		now Helplesness is false;
-	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and extract two samples of the Flux, one from the current before it passes through this gate, and one after it has done so. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here, Dunia will be to your assistance.[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose.[paragraph break]";
+	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, from the [bold type]Flux before the Gate[roman type], and one after it has done so, from the [bold type]Flux beyond the Gate[italic type]. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance. You can always ask her about the [bold type]Extraction[roman type], or about [bold type]help[italic type] in general for that matter.[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose.[paragraph break]";
 	now the player carries the Flux Extractor;
-	now Du'un is in the Lower Gate_Frizza.
+	now Du'un is in the Lower Gate_Frizza;
+	now BlooSympathy is true.
 
 After asking Dunia about a topic listed in the Table of Dunia Responses 1:
 		say "[response entry]".
 		
 Table of Dunia Responses 1
 Topic	Response
+"Extraction"	"[italic type]You heard the old man. Go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, at the [bold type]Flux before the Gate[italic type], and one after it has done so, at the [bold type]Flux beyond the Gate[italic type]. You will need to [bold type]approach [italic type] the Currents before being able to extract something. Return to me if you have the two samples and ask me about the [bold type]Flux Essences[italic type]."
+"Samples"	"[italic type]You heard the old man. Go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, at the [bold type]Flux before the Gate[italic type], and one after it has done so, at the [bold type]Flux beyond the Gate[italic type]. You will need to [bold type]approach [italic type] the Currents before being able to extract something. Return to me if you have the two samples and ask me about the [bold type]Flux Essences[italic type]."
 "Flux" 	"[if Dunia is in the Upper Gate_Frizza][italic type]Yeah, our essence and all that shit. Don't mention it.[paragraph break][otherwise if Dunia is in the Flux Core_frizza][italic type]Yes, I might have been a bit negative. It is quite something, huh? At least it makes for a show.[paragraph break]"	
 "Techies"	"[if Dunia is in the Upper Gate_Frizza][italic type]They were settler's, originally. Sadly they chose to defile the Flux with their robots and devices, hence their nickname. We are not at good terms at the moment, our 'Leader' Kollock even is bitterly hostile towards them, as he sees them as heretics.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]They were settler's, originally. Sadly they chose to defile the Flux with their robots and devices, hence their nickname. It has been a long time since any of them saw what is going on below the surface - we won't let them, anymore, and the Flux won't either.[paragraph break]"
 "Kollock"	"[if Dunia is in the Upper Gate_Frizza][italic type]Our spiritual leader. Celebrated as god-king. 'He is master, he is Flux'.[paragraph break][roman type]Her tone seems to you tinged with a trace of sarcasm. She looks around, as if to see if nobody is within earshot.[paragraph break][italic type]Though some appreciate their freedom more than others.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]Our spiritual leader. Celebrated as god-king. 'He is master, he is Flux'. He is a bollocks if you ask me. Look around you. Nobody has the power to control the force of nature.[paragraph break]"
@@ -1414,15 +1444,41 @@ Topic	Response
 "Duju"	"[if Dunia is in the Upper Gate_Frizza][italic type]Our people. We have lived on this surface as long as we remember, and that indeed is a long time. We never were the star-seeking sort, due to our connection to the Fluxes. You may have noticed the bluish glow and the glowing bodyparts, they pretty much tell on that fact.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]Our people. We have lived on this surface as long as we remember, and that indeed is a long time. The Flux fuels us, it is part of us. Thus you are practically standing next to our aorta, you might not have known that.[paragraph break]"
 "Orb"	"[if Dunia is in the Flux Core_Frizza][italic type]Pulsing, pumping, central in a sheltered place - does that remind you of something? Yes, it is exactly that.[paragraph break]"
 "Cavern"	"[if Dunia is in the Flux Core_Frizza][italic type]Honestly, I don't know where it came from or who built it. Our belief says we originated in this lake down there, could be absurd enough to be true, if you ask me.  All that I really know is to not let someone down here we don't trust ... or can't control.[paragraph break]"
+"Sinkan Cloak"	"[italic type]You wouldn't want to know where this is from. The beasts that work up such a skin are other people's nightmares."
 
 
 After asking Dunia about "Flux Extractor":
 	if Dunia has the Sinkan Cloak:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast.[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
+		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
 		now the player carries the Sinkan Cloak;
 		now the description of the Sinkan Cloak is "The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back.";
 	else:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin."
+		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.[paragraph break][roman type]She shows a devilish grin."
+		
+After asking Dunia about "Approaching":
+	if Dunia has the Sinkan Cloak:
+		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it..[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
+		now the player carries the Sinkan Cloak;
+		now the description of the Sinkan Cloak is "The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back.";
+	else:
+		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.[paragraph break][roman type]She shows a devilish grin."
+		
+
+After asking Dunia about "Help":
+	if the player has the Sinkan Cloak:
+		if the Monolithic Rock is examined:
+			if the player has the Miserable Lever:
+				say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+			else:
+				say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+				now the player has the Miserable Lever;
+		else:
+			say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.[paragraph break][roman type]She shows a devilish grin.";
+	else:
+		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. [paragraph break][italic type]Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
+		now the player carries the Sinkan Cloak;
+		now the description of the Sinkan Cloak is "The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back."
+		
 		
 After putting on the Sinkan Cloak:
 	now CloakWearing is true.
@@ -1431,15 +1487,40 @@ A Miserable Lever is in the Underground Flux_Frizza. The description of it is "R
 
 After asking Dunia about "Gun":
 	if the Monolithic Rock is examined:
-		say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+		if the player has the Miserable Lever:
+			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+		else:
+			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
 	else:
 		say "[italic type]A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place."
+		
+After asking Dunia about "Rock":
+	if the Monolithic Rock is examined:
+		if the player has the Miserable Lever:
+			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+		else:
+			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+		now the player has the Miserable Lever;
+	else:
+		say "[italic type]A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place."
+		
+
+After asking Dunia about "Pushing":
+	if the Monolithic Rock is examined:
+		if the player has the Miserable Lever:
+			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+		else:
+			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+		now the player has the Miserable Lever;
+	else:
+		say "[italic type]A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place."
+
 [--]
 
 [Surface Flux 2]
 
-A Flux Current is in the Surface Flux 2_Frizza. There is a Regulated Flux Essence in the Underground Flux_Frizza. The printed name of the Flux Current is "Regulated Flux Current".
+There is a Regulated Flux Current is in the Surface Flux 2_Frizza. There is a Regulated Flux Essence in the Underground Flux_Frizza. The printed name of the Regulated Flux Current is "Regulated Flux Current".
 FluxProximity is a truth state that varies. FluxProximity is false.
 FluxExperience is a truth state that varies. FluxExperience is false.
 Instead of taking the Flux Current:
@@ -1458,27 +1539,35 @@ Approaching is an action applying to one visible thing.
 Understand "approach [something]" as approaching.
 
 Extracting is an action applying to one visible thing.
-Understand "extract sample from [Flux Current]" as extracting. 
-Understand "extract sample from [Flux Current 2]" as extracting. 
+Understand "extract sample from [Regulated Flux Current]" as extracting. 
+Understand "extract sample from [Unregulated Flux Current]" as extracting. 
 
 After approaching the Flux Current:
 	if the player wears the Sinkan Cloak:
 		if FluxProximity is false:
 			if FluxExperience is false:
-				say "Very cautiously you approach the Flux. While coming nearer, each step feels like pumping pure electrictiy into the ground. Your whole body swings in an unknown rhythm. You are only a few steps away now. The Flux flowing lamishly as ever, blistering, throwing arcs of bluish vapor. You feel your atoms slowly leaving their place, starting to rearrange. You take one step after the other, always expecting that your legs will come apart with the next one. Finally, you reach the pedestal. As you crawl onto it, you feel your mind dissolving, your synapses strewing about. You are becoming the Flux.[paragraph break]";
+				say "Very cautiously you approach the Flux. While coming nearer, each step feels like pumping pure electrictiy into the ground. Your whole body swings in an unknown rhythm. You are only a few steps away now. The Flux flowing lamishly as ever, blistering, throwing arcs of bluish vapor. You feel your atoms slowly leaving their place, starting to rearrange. You take one step after the other, always expecting that your legs will come apart with the next one. Finally, you reach the pedestal. As you crawl onto it, you feel your mind dissolving, your synapses strewing about. You are becoming the Flux. You should [bold type]extract[roman type] the sample as fast as possible if you want to survive this.[paragraph break]";
 				now FluxProximity is true;
 			else:
 				say "You already got what you wanted, no need to take risks.";
 	else:
-		say "[paragraph break]You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [paragraph break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you."
+		say "[if the player has the Sinkan Cloak]You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [line break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you.[otherwise] You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [line  break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you. Maybe you should ask Dunia for [bold type]help[roman type]."
 
+
+		
 After extracting:
 	if FluxProximity is true:
 		if FluxExperience is false:
-			say "You thrust your arm over the ledge, despairingly clasping the Flux Extractor, not knowing whether your arm will dematerialize in an instant. The Extractor extends automatically and dips its head into the glowing liquid. You think to hear a beeping sound. It blurs, as your mind dives into the Flux, becomes energy. You perceive magnetic fields, penetrated by some foreign control. You feel the stream, the Flux arranging itself, its symbioses with the planet. You feel the life essence of the Duju, feeding from the Flux. And you feel its core, more powerful than any other source you ever knew, burried deep down in the caverns. Still you have a slim link to your body, but it trembles and shakes heavily. Finally, your hear a tedious, enduring beeping sound. The Flux Extractor is finished, it now carries a sample of the Flux. You force yourself to crawl down the pedestal, your hands feeling like they would disintegrate any moment, their contours growing hazy. With each step you take away from the Flux, your mind and body recover their focus. You drag yourself up the shore and up the cliffs, before collapsing on the rocky soil.[paragraph break]You wake up.[paragraph break]You receive a [bold type]Regulated Flux Essence[roman type].";
-			now FluxExperience is true;
-			now FluxProximity is false;
-			now the Regulated Flux Essence is in the Flux Extractor;
+			if the Unregulated Flux Essence is in the Flux Extractor:
+				say "You thrust your arm over the ledge, despairingly clasping the Flux Extractor, not knowing whether your arm will dematerialize in an instant. The Extractor extends automatically and dips its head into the glowing liquid. You think to hear a beeping sound. It blurs, as your mind dives into the Flux, becomes energy. You perceive magnetic fields, penetrated by some foreign control. You feel the stream, the Flux arranging itself, its symbioses with the planet. You feel the life essence of the Duju, feeding from the Flux. And you feel its core, more powerful than any other source you ever knew, burried deep down in the caverns. Still you have a slim link to your body, but it trembles and shakes heavily. Finally, your hear a tedious, enduring beeping sound. The Flux Extractor is finished, it now carries a sample of the Flux. You force yourself to crawl down the pedestal, your hands feeling like they would disintegrate any moment, their contours growing hazy. With each step you take away from the Flux, your mind and body recover their focus. You drag yourself up the shore and up the cliffs, before collapsing on the rocky soil.[paragraph break]You wake up.[paragraph break]You receive a [bold type]Regulated Flux Essence[roman type].[paragraph break]You have both essences. You should return to Dunia and ask her about the [bold type]Flux Essences[roman type].";
+				now FluxExperience is true;
+				now FluxProximity is false;
+				now the Regulated Flux Essence is in the Flux Extractor;
+			else:
+				say "You thrust your arm over the ledge, despairingly clasping the Flux Extractor, not knowing whether your arm will dematerialize in an instant. The Extractor extends automatically and dips its head into the glowing liquid. You think to hear a beeping sound. It blurs, as your mind dives into the Flux, becomes energy. You perceive magnetic fields, penetrated by some foreign control. You feel the stream, the Flux arranging itself, its symbioses with the planet. You feel the life essence of the Duju, feeding from the Flux. And you feel its core, more powerful than any other source you ever knew, burried deep down in the caverns. Still you have a slim link to your body, but it trembles and shakes heavily. Finally, your hear a tedious, enduring beeping sound. The Flux Extractor is finished, it now carries a sample of the Flux. You force yourself to crawl down the pedestal, your hands feeling like they would disintegrate any moment, their contours growing hazy. With each step you take away from the Flux, your mind and body recover their focus. You drag yourself up the shore and up the cliffs, before collapsing on the rocky soil.[paragraph break]You wake up.[paragraph break]You receive a [bold type]Regulated Flux Essence[roman type].";
+				now FluxExperience is true;
+				now FluxProximity is false;
+				now the Regulated Flux Essence is in the Flux Extractor;
 		else:
 			say "You already got the regulated sample, you will need an unregulated one as well.";
 	else:
@@ -1488,7 +1577,7 @@ After extracting:
 Before doing anything other than extracting:
 	if the player is in the Surface Flux 2_Frizza:
 		while FluxProximity is true:
-			say "You try to ... there is no ... possible ... ";
+			say "You try to ... there is no ... possible ... [bold type]extract[roman type] ...";
 			stop the action.
 
 Before examining the player:
@@ -1509,19 +1598,19 @@ ToppledRock is a truth state that varies. ToppledRock is false.
 An Unregulated Flux Essence is in the Underground Flux_Frizza.
 UnregulatedEssence is a truth state that varies. UnregulatedEssence is false.
 
-A Flux Current 2 is in the Surface Flux_Frizza. The printed name of the Flux Current 2 is "Unregulated Flux Current".
-Before examining the Flux Current 2:
+An Unregulated Flux Current is in the Surface Flux_Frizza. The printed name of the Unregulated Flux Current is "Unregulated Flux Current".
+Before examining the Unregulated Flux Current:
 	if the player has the Flux Extractor:
-		now the description of the Flux Current 2 is "A blue fluid, running through the craggy landscape. Without a ladder or a descent you won't be able to reach it.";
+		now the description of the Unregulated Flux Current is "A blue fluid, running through the craggy landscape. You can try to [bold type]approach[roman type] the current.";
 	else:
-		now the description of the Flux Current 2 is "A branch of the Flux."
+		now the description of the Unregulated Flux Current is "A branch of the Flux."
 
-There is a Monolithic Rock in the Surface Flux_Frizza. The description of it is "A huge, slender rock looms at the shore of the Flux. It would make a good land to the Flux. It doesn't seem to stand all too stable, if you could only knock it over with something ..." The Monolithic rock is scenery.
+There is a Monolithic Rock in the Surface Flux_Frizza. The description of it is "A huge, slender rock looms at the shore of the Flux. It would make a good land to the Flux. It doesn't seem to stand all too stable, if you could only [bold type]push[roman type] it over with something ..." 
 After examining the Monolithic Rock, now the Monolithic Rock is examined. 
 
 Instead of pushing the Monolithic Rock:
 	if the player has the Miserable Lever:
-		say "You thrust the bar into the soil under the rock and start levering. Even with the amplified force you need your whole body to move the rock. Finally, it staggers, and with a last effort you make it topple over. The rock slowly tilts and then continues, with a mighty rumble, to drop into the flux, sending huge waves to both sides. You now have a descent into the Flux. However, your already miserable Lever now is little more than a bent piece of metal, you leave it on the ground";
+		say "You thrust the bar into the soil under the rock and start levering. Even with the amplified force you need your whole body to move the rock. Finally, it staggers, and with a last effort you make it topple over. The rock slowly tilts and then continues, with a mighty rumble, to drop into the flux, sending huge waves to both sides. You now have a descent into the Flux, you can try to [bold type]approach[roman type] it. However, your already miserable Lever now is little more than a bent piece of metal, you leave it on the ground.";
 		remove the Miserable Lever from play;
 		now the printed name of the Monolithic Rock is "Toppled Rock";
 		now the description of the Monolithic Rock is "A huge, slender rock. It now serves as a descent into the Flux. You may [bold type]approach[roman type] it now.";
@@ -1531,40 +1620,78 @@ Instead of pushing the Monolithic Rock:
 		say "Even if it stands loose, you can't shove it with only your muscles.";
 		stop the action.
 
-After approaching the Flux Current 2:
+		
+
+After approaching the Unregulated Flux Current:
 	if ToppledRock is true:
 		if UnregulatedEssence is false:
 			if the player wears the Sinkan Cloak:
-				say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. [paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type].";
-				now the Unregulated Flux Essence is in the Flux Extractor;
-				now UnregulatedEssence is true;
+				if the Regulated Flux Essence is in the Flux Extractor:
+					say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. [paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type].[paragraph break]You have both essences. You should return to Dunia and ask her about the [bold type]Flux Essences[roman type].";
+					now the Unregulated Flux Essence is in the Flux Extractor;
+					now UnregulatedEssence is true;
+				else:
+					say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. [paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type].";
+					now the Unregulated Flux Essence is in the Flux Extractor;
+					now UnregulatedEssence is true;
 			else:
-				say "[paragraph break]As you set foot on the ledge you already feel the Flux dragging your essence out of your body. Your mind starts to scatter uncontrollably. Just before losing control, you fall backwards, onto the hard ground, taking some time to regain corporal and mental integrity.";
+				say "[if the player has the Sinkan Cloak]As you set foot on the ledge you already feel the Flux dragging your essence out of your body. Your mind starts to scatter uncontrollably. Just before losing control, you fall backwards, onto the hard ground, taking some time to regain corporal and mental integrity.[otherwise]As you set foot on the ledge you already feel the Flux dragging your essence out of your body. Your mind starts to scatter uncontrollably. Just before losing control, you fall backwards, onto the hard ground, taking some time to regain corporal and mental integrity. Maybe you should ask Dunia for [bold type]help[roman type].";
 		else:
 			say "You already got what you wanted, no need to take risks.";
 	else:
 		say "There is no way to get down to the Flux. You will need something to descend on."
-		
 	
 [---]
 
 [With both Essences]
+
+Instead of going to the Upper Gate_Frizza:
+	if the Unregulated Flux Essence is in the Flux Extractor:
+		if the Regulated Flux Essence is in the Flux Extractor:
+			now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.[paragraph break]You have both essences. You should return to Dunia and ask her about the [bold type]Flux Essences[roman type].";
+			continue the action;
+		else:
+			continue the action;
+	else:
+		continue the action.
+
 The description of the unregulated Flux Essence is "A small orb of blue fluid, billowing inside the Extractor. It seems like it would want to sputter, but it is tightly held in place by its chamber."
 The description of the regulated Flux Essence is "A small phosphorescent orb, emitting blue light. Its surface is even, there are no whirling drifts, it looks balanced."
 
 
-After asking Dunia about "Flux Essence":
-	if the Regulated Flux Essence is in the Flux Extractor:
-		if the Unregulated Flux Essence is in the Flux Extractor:
-			say "[italic type]I see you have the two samples. Impressive ... Wait here for a moment.[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]Indeed, he returned. What a cheerful message.[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]One might.[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.[paragraph break][roman type]That warning could have come earlier.[paragraph break]You further decend, approaching the big blue lake, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
-			say "Du'un comments your arrival.[paragraph break][italic type]That is the core of our Flux. It is the quintessence. Our very being.";
-			move the player to Flux Core_Frizza;
-			now Dunia is in the Flux Core_Frizza;
-			now Du'un is in the Flux Core_Frizza;
+After asking Dunia about "Flux Essences":
+	if Dunia is in the Upper Gate_Frizza:
+		if the Regulated Flux Essence is in the Flux Extractor:
+			if the Unregulated Flux Essence is in the Flux Extractor:
+				say "[italic type]I see you have the two samples. Impressive ... Wait here for a moment.[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]Indeed, he returned. What a cheerful message.[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]One might.[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.[paragraph break][roman type]That warning could have come earlier.[paragraph break]You further decend, approaching the big blue pool, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
+				say "Du'un comments your arrival.[paragraph break][italic type]That is the core of our Flux. It is the quintessence. Our very being. Do you see that pool in the middle of plateau? Put the Essences in there. Start with the unregulated one.";
+				now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
+				move the player to Flux Core_Frizza;
+				now Dunia is in the Flux Core_Frizza;
+				now Du'un is in the Flux Core_Frizza;
+			else:
+				say "[italic type]You're missing the regulated one.";
 		else:
-			say "You're missing the regulated one.";
+			say "[italic type]You're missing the unregulated one.";
 	else:
-		say "You're missing the unregulated one."
+		say "[italic type]You will need to put them in the pool. You should better ask Du'un about the [bold type]Essence Pool[italic type]."
+		
+After asking Dunia about "the Flux Essences":
+	if Dunia is in the Upper Gate_Frizza:
+		if the Regulated Flux Essence is in the Flux Extractor:
+			if the Unregulated Flux Essence is in the Flux Extractor:
+				say "[italic type]I see you have the two samples. Impressive ... Wait here for a moment.[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]Indeed, he returned. What a cheerful message.[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]One might.[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.[paragraph break][roman type]That warning could have come earlier.[paragraph break]You further decend, approaching the big blue lake, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
+				say "Du'un comments your arrival.[paragraph break][italic type]That is the core of our Flux. It is the quintessence. Our very being. Do you see that pool in the middle of plateau? Put the Essences in there. Start with the unregulated one.";
+				now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
+				move the player to Flux Core_Frizza;
+				now Dunia is in the Flux Core_Frizza;
+				now Du'un is in the Flux Core_Frizza;
+			else:
+				say "[italic type]You're missing the regulated one.";
+		else:
+			say "[italic type]You're missing the unregulated one.";
+	else:
+		say "[italic type]You will need to put them in the pool. You should better ask Du'un about the [bold type]Essence Pool[italic type]."
 
 Instead of going up from the Flux Core_Frizza:
 	say "You wouldn't want to go up without the Duju, who knows what awaits you."
@@ -1572,7 +1699,7 @@ Instead of going up from the Flux Core_Frizza:
 The description of the Flux Core_Frizza is "A huge cavern with a Flux lake at its bottom and a spectacular orb flowing midair, emitting Flux waves. You can't see the tunnel from which you came from. In the middle of the plateau is a small lake, sparkling with a pure sheen. " 
 
 [Energy Orb is an object in the Flux Core_Frizza.]
-The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is scenery. The description of it is "A small bluish lake, its surface entirely still, sparkling with a pure sheen."
+The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is fixed in place. The description of it is "A small bluish lake, its surface entirely still, sparkling with a pure sheen. You can [bold type]put [roman type]the Essences into it."
 
 The Pure Flux Essence is in the Sanctuary_Frizza.
 
@@ -1607,7 +1734,7 @@ Instead of inserting the Flux Extractor into the Essence Pool:
 		stop the action.
 		
 After inserting the Unregulated Flux Essence into the Essence Pool:
-		say "You carefully extend the Extractor to drop the sample that you've got from the Flux before the gate into the pool. You hear a muffled[italic type]splash[roman type]. Afterwards, the pool starts swirling, forming thick threads of seemingly solid mass. It encloses the sample in its center and continues to arrange itself in patterns. Finally, with a last compression, it looses the tension and returns to a still state, leaving no sign of the Unregulated Essence. Dunia briefly gives off a comment.[paragraph break][italic type]Now, that was spectacular.";
+		say "You carefully extend the Extractor to drop the sample that you've got from the Flux before the gate into the pool. You hear a muffled[italic type] splash[roman type]. Afterwards, the pool starts swirling, forming thick threads of seemingly solid mass. It encloses the sample in its center and continues to arrange itself in patterns. Finally, with a last compression, it looses the tension and returns to a still state, leaving no sign of the Unregulated Essence. Dunia briefly gives off a comment.[paragraph break][italic type]Now, that was spectacular.";
 		remove Unregulated Flux Essence from play.
 		
 Instead of inserting the Regulated Flux Essence into the Essence Pool:
@@ -1617,15 +1744,15 @@ Instead of inserting the Regulated Flux Essence into the Essence Pool:
 	else:
 		say "As you drop the Regulated Flux Essence from beyond the gate into the Pool, you hear an impressive silence - the sample actually makes no sound at all as it meets the surface. Excited, you stare at the pool. It shows a rash shiver, a quick swirld, before regaining its calm state. Du'un turns to you, his eyes smiling.[paragraph break][italic type]You might want to know - that is a quite good outcome.";
 		remove Regulated Flux Essence from play;
-		say "[paragraph break]As soon as Du'un finished, the pool again starts to move, first swirling, then seething heavily. The bubbles coming from it become solid in mid-air and drop down again, ghostly arcs of blue smoke emerge from the pool, deep rifts start to form. Unvoluntarily, you take a step back. Just when it seems that the pool would sputter out of its basin the tensions abate, the rifts close and the convulsive motions subside. On turning, you see Du'un holding his staff fixed towards the pool. The last movement goes through the pool, then it falls silent. Suddenly, a small object comes to the surface - a transparent orb with a balanced source of energy inside it: a Pure Flux Orb. [line break]Du'un points his staff in the direction of the orb and lifts it out of the pool, without touching it, right into a glass container that Dunia stands ready with. As soon as the orb is in the container, Dunia seals it, holding it triumphantly. Du'un turns to you.[paragraph break][italic type]That, now, is something special.[paragraph break][roman type]Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps the direct contact to the Core was too much for it.[paragraph break]You receive a [bold type]Pure Flux Essence.";
+		say "[paragraph break][roman type]As soon as Du'un finished, the pool again starts to move, first swirling, then seething heavily. The bubbles coming from it become solid in mid-air and drop down again, ghostly arcs of blue smoke emerge from the pool, deep rifts start to form. Unvoluntarily, you take a step back. Just when it seems that the pool would sputter out of its basin the tensions abate, the rifts close and the convulsive motions subside. On turning, you see Du'un holding his staff fixed towards the pool. The last movement goes through the pool, then it falls silent. Suddenly, a small object comes to the surface - a transparent orb with a balanced source of energy inside it: a Pure Flux Orb. [line break]Du'un points his staff in the direction of the orb and lifts it out of the pool, without touching it, right into a glass container that Dunia stands ready with. As soon as the orb is in the container, Dunia seals it, holding it triumphantly. Du'un turns to you.[paragraph break][italic type]That, now, is something special.[paragraph break][roman type]Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps the direct contact to the Core was too much for it.[paragraph break]You receive a [bold type]Pure Flux Essence.";
 		remove the Sinkan Cloak from play;
 		now the player has the Pure Flux Essence;
 		say "[line break][italic type]Oh, and we will need that back.[paragraph break][roman type]Dunia takes the Flux Extractor from you, smiling cheekily.";
 		remove Flux Extractor from play;
-		say "[paragraph break]You start the long ascend, Du'un and Dunia following close behind you. Amazed, you hold the Pure Essence in your hands, aware of its worth.[paragraph break]As you finally reach the Flux Gate you see that the operator and staff guards have changed, you must have been down there quite a while. One last time, Du'un adresses you.[paragraph break][italic type]If you insert that into your ship, you should have enough energy for a few thousand years of space travel. Use it wisely. And farewell.[paragraph break][roman type]And with that he leaves the Gate, this time heading straight to the north, towards the city.[paragraph break][italic type]I couldn't have said it better. Farewell, and be free to look around, should there be a next time, perhaps I will be there.[paragraph break][roman type]Now Dunia too sets out - her in the direction of the ghastly mountains. You stand there, with more energy in your hands than you could ever fathom. It might be time to leave that place.";
+		say "[line break]You start the long ascend, Du'un and Dunia following close behind you. Amazed, you hold the Pure Essence in your hands, aware of its worth.[paragraph break]As you finally reach the Flux Gate you see that the operator and staff guards have changed, you must have been down there quite a while. One last time, Du'un adresses you.[paragraph break][italic type]If you [bold type]insert[roman type] that into your ship, you should have enough energy for a few thousand years of space travel. Use it wisely. And farewell.[paragraph break][roman type]And with that he leaves the Gate, this time heading straight to the north, towards the city.[paragraph break][italic type]I couldn't have said it better. Farewell, and be free to look around, should there be a next time, perhaps I will be there.[paragraph break][roman type]Now Dunia too sets out - her in the direction of the ghastly mountains. You stand there, with more energy in your hands than you could ever fathom. It might be time to leave that place.";
 		now the player is in the Upper Gate_Frizza.
 
-The description of the Pure Flux Essence is "A transparent orb inside a glass container, its core is an even sphere of pure blue energy. It is more than fit to start you ship back up. You should try inserting it."
+The description of the Pure Flux Essence is "A transparent orb inside a glass container, its core is an even sphere of pure blue energy. It is more than fit to start you ship back up. You should try to [bold type]put[roman type] it into the empty [bold type]Power Unit[roman type]."
 
 
 [End]
@@ -1633,7 +1760,7 @@ The description of the Pure Flux Essence is "A transparent orb inside a glass co
 The Discharged Spaceship is inside the Landing Zone_Frizza. The description of the Discharged Spaceship is "Your spaceship, broken down due to power loss. The clouds in the atmosphere may have sped up the discharge."  The Discharged Spaceship is fixed in place.
 
 Instead of inserting anything into the Discharged Spaceship:
-	say "That wouldn't be of much use. The only thing that sincerely needs maintenance is the Power Unit."
+	say "That wouldn't be of much use. The only thing that sincerely needs maintenance is the [bold type]Power Unit[roman type]."
 
 The Power Unit is a container inside the Discharged Spaceship. The Discharged Spaceship is fixed in place.
 Instead of taking the Power Unit:
@@ -1745,40 +1872,78 @@ After asking Trapist about "Spaceship":
 		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 
 
+
 [
-[TO DO]
-
-- Navigation verbessern (z.B. "In the south/north", "Instead of going nowhere from X say "..")
-- "End of Game" Text schreiben und so prpgrammieren, dass er am Spielende ausgegeben wird
-
 [IN PROGRESS]
-
-- Beschreibungen für Räume (insbesondere Blakkríss Temple) erweitern
-- Dialog mit Heimdallr erweitern (ggf. mit Response Table)
-- Beschreibungen für Items (z.B. examine, take) erweitern
-
-[DONE]
-- energy orb Beschreibungen narrativ anpassen (bzgl. Frizza - Pure Flux Essence/insert into Power Unit anstelle command panel)
-- Space Suit als Kleidung inkl. Suit Capacitor (Container) programmieren, den man erst im Raumschiff auf Kaldríss anziehen muss
-- Capacitor Mechanik ggf. vereinfachen (Instead of inserting anything other than into .. )
+- es wird keine Raumbeschreibung gedruckt, wenn man in die Spaceship Storage geht
 ]
-
 
 Chapter 5 - Kaldríss
 
 Section 1 - Crash Site
 
+[Extensions]
+[Map]
+Include Automap by Mark Tilford.
+
+[Images]
+Include Simple Graphical Window by Emily Short.
+Include Location Images by Emily Short.
+
+
+Figure of Spaceship Bridge_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Spaceship Bridge_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Spaceship Storage_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Spaceship Storage_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+
+Figure of Spaceship Exit_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Spaceship Exit_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Crash Zone_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Crash Zone_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Hunting Grounds_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Hunting Grounds_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Yundar's Cave is the file "background_kaldriss.png".
+The room-illustration of Yundar's Cave is the Figure of Spaceship Bridge_Kaldríss.
+		
+
 [Finding a way off the space ship]
 
-[Axesto is a person. The Player is Axesto.]
+Axesto is a person. The Player is Axesto.
+
+[Global Error Message]
+[Items]
+Instead of taking command panel, say "Do you really wanna try to ruin your last chance of escaping this planet by ripping out the command panel?!".
+Instead of taking the locker, say "Not. gonna. happen.".
+Instead of taking the suit chamber, say "Better not try this since things could blow up due to the immense pressure inside the suit chamber.".
+Instead of taking the rocks, say "The Yetíss will probably notice if you steal those rocks. Better to leave them wherey they are.".
+Instead of taking pillars, say "You might be green but by far not as strong as the other green guy.  And less angry.".
+
+[Directions]
+Instead of going nowhere from Spaceship Bridge_Kaldríss, say "You don't want to run into one of the walls of your spaceship, do you?".
+Instead of going nowhere from Spaceship Storage_Kaldríss, say "There's only two directions you can go. Either south to the back of the ship or north to the bridge.".
+Instead of going nowhere from Spaceship Exit_Kaldríss, say "There's only one way. This is not the right one.".
+Instead of going nowhere from Crash Zone_Kaldríss, say "Seems like there is some kind of blizzard going on in this direction. It's absolutely not advised going there since you would probably die.".
+Instead of going nowhere from Hunting Grounds_Kaldríss, say "Seems like there is some kind of blizzard going on in this direction. It's absolutely not advised going there since you would probably die.".
+Instead of going nowhere from Yundar's Cave, say "It's way too dark and therefore too dangerous to go alone.".
+Instead of going nowhere from Yarwol's Cave, say "It's way too dark and therefore too dangerous to go alone.".
+Instead of going nowhere from Main Cave_Kaldríss, say "It's way too dark and therefore too dangerous to go alone.".
+Instead of going nowhere from Secret Cave_Kaldríss, say "The only way out of here would be through the door you came in.".
+Instead of going nowhere from Blakkríss Temple Entrance, say "This temple was built on a mountain which means the only way is straight through the temple.".
+Instead of going nowhere from Great Hall_Kaldríss, say "There are incredibly high walls on both sides. Your only option is to keep going west.".
+Instead of going nowhere from Spectral Bridge, say "Your only option is to cross this mystical bridge. Going in any oother direction would mean you falling off of it resulting in a painful death.".
+
 
 [Spacesuit with energy capacitor]
 A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
 The carrying capacity of an energy capacitor is always 1.
-The description of the spacesuit is "Spacesuit Mk. XV[paragraph break]Made for deep space travel due to its extraordinary thermodynamic capabilities.[paragraph break]This model also has an energy capacitor built in that needs some kind of energy in order to properly work. The more pure the energy the more effective the suits thermal protection will work.".
+The description of the spacesuit is "[bold type]Spacesuit Mk. XV[roman type][paragraph break]Made for deep space travel due to its extraordinary thermodynamic capabilities.[paragraph break]This model also has an energy capacitor built in that needs some kind of energy in order to properly work. The more pure the energy the more effective the suits thermal protection will work.".
 
 After examining the spacesuit for the first time:
-	say "After taking a closer look it seems like the suit doesn't have any juice left so you would still freeze pretty quickly after leaving the spaceship. Unless, of course, you find some kind of energy source that fits right in.".
+	say "After taking a closer look it seems like the energy capacitor of the spacesuit doesn't have any juice left so you would still freeze to death pretty quickly upon leaving the spaceship. Unless, of course, you find a fitting energy source you could [bold type]insert into the energy capacitor[roman type].".
 
 [Warnings for inserting wrong items]
 Before inserting protector glove into the energy capacitor:
@@ -1824,9 +1989,6 @@ After taking the flux essence fragment for the first time:
 
 
 
-[Global Error Message]
-Instead of taking some scenery, say "You don't seem to be strong enough."
-Instead of going nowhere, say "You don't want to go there."
 
 
 
@@ -1835,13 +1997,15 @@ Instead of going nowhere, say "You don't want to go there."
 
 The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spaceship Storage_Kaldríss, the Spaceship Exit_Kaldríss, the Hunting Grounds_Kaldríss and the Crash Zone_Kaldríss are in Crash Site_Kaldríss. 
 
+
+
 [Items]	
 [Hidden Items/Riddles]
 [Command Panel]
-In the Spaceship Bridge_Kaldríss is a command panel. It is scenery.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
+In the Spaceship Bridge_Kaldríss is a command panel. The description of the command panel is "Your trustworthy command panel.". It is fixed in place.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
 
 After opening the command panel:
-	say "You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures.".
+	say "You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures. Now you're also able to [bold type]examine[roman type] the command panel a little further and see what's inside.".
 	
 After closing the command panel:
 	say "You put everything back in place and pretend like it never happened. Nobody would ever notice.".
@@ -1852,14 +2016,17 @@ The green button unlocks the power reserve. In the power reserve is a flux essen
 Before taking the flux essence fragment:
 	say "This flux essence used to contain way more energy its remains might contain just enough energy to power your spacesuit."
 
-
 	
 The fried communicator is fixed in place.
 The encryption key is in the command panel. The encryption key can be taken. The description of the encryption key is "This encryption key looks very mysterious. Also, you aren't entirely sure what its purpose is. Suddenly you notice a small label on the side of the device.[paragraph break][italic type]Secret key for my locker in the spaceship storage[paragraph break]Note to self: remove this label after hiding key in command panel[roman type]"
 
-After unlocking locker with encryption key:
-	say "This key seems to fit.  [italic type]Lock mechanism status: [roman type][bold type]DEACTIVATED //[roman type] You may proceed to open the locker.";
-	remove encryption key from play.
+
+After examining fried communicator:
+	now the description is "Yep, totally busted!"
+
+Before taking the fried communicator:
+	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.". 
+
 
 [Button]
 The green button is a device. It is in the command panel. It is switched off. Instead of pushing the green button: if the green button is switched off, try switching on the green button; otherwise try switching off the green button. The green button is fixed in place.
@@ -1872,55 +2039,40 @@ After switching off the green button:
 	now the power reserve is locked;
 	say "Boop Beep! Power Reserve status: [bold type]LOCKED[roman type].[paragraph break]Power Reserve hermetically sealed.[paragraph break]All security mechanisms in tact.[paragraph break]Energy level: normal"
 
-After examining fried communicator:
-	say "Yep, totally busted!"
 
-Before taking the fried communicator:
-	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.". 
-
-
-
-
-
-Before examining the command panel:
-	if CommandPanelOpen is true:
-		say "You could open this baby up and take a peak inside.";
-	if CommandPanelOpen is false:
-		say "[italic type]The exposed mainframe is truly gorgeous but I should focus on more important things now![roman type][paragraph break]";
-		continue the action.
-
-
-
-	
 
 [Emergency Torch in the Locker]
-In the Spaceship Storage_Kaldríss is a locker. It is scenery. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "You remember putting something important in here but you can't recall what exactly it was. Should probably open it up to know for sure.".
-In the locker is an emergency torch. The emergency torch can be taken. The description of the emergency torch is "Plasma Torch Mk. IV - Survival Issue".
+In the Spaceship Storage_Kaldríss is a locker. It is fixed in place. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "You remember putting something important in here but you can't recall what exactly it was. Should probably open it up to know for sure.".
+In the locker is an emergency torch. The emergency torch can be taken. The description of the emergency torch is "[bold type]Plasma Torch Mk. IV[roman type][paragraph break]Survival Issue - built to function in any kind of climate.".
 Before taking the emergency torch:
 	say "This baby will light up no matter how harsh the conditions are since it uses a special fuel for the ignition process."
 
-In the Spaceship Storage_Kaldríss is a suit chamber. It is scenery. It is closed and openable. In the suit chamber is a spacesuit. The description of the suit chamber is "A hermetically sealed chamber that contains your spacesuit. Whenever required a cleaning process can be initiated in order to kill off every last bit of unwanted organic substance on a molecular level.".
+After unlocking locker with encryption key:
+	say "This key seems to fit.  [italic type]Lock mechanism status: [roman type][bold type]DEACTIVATED //[roman type] You may proceed to open the locker.";
+	remove encryption key from play.
+
+In the Spaceship Storage_Kaldríss is a suit chamber. It is fixed in place. It is closed and openable. In the suit chamber is a spacesuit. The description of the suit chamber is "A hermetically sealed chamber that contains your spacesuit. Whenever required a cleaning process can be initiated in order to kill off every last bit of unwanted organic substance on a molecular level. [paragraph break]Looks like there is currently no cleaning sequence in progress so it should be safe to take the spacesuit out.".
 
 After opening the suit chamber:
-	say "[italic type]Seal Status: [roman type][bold type]DEACTIVATED //[roman type][paragraph break][italic type]Contamination Level Check: 0,000001 %[paragraph break]Opening chamber.[roman type]".
+	say "[italic type]Seal Status: [roman type][bold type]DEACTIVATED //[roman type][paragraph break][italic type]Contamination Level Check: 0,00 %[paragraph break]Opening chamber.[roman type]".
 	
 After closing the suit chamber:
-	say "[italic type]Seal Status: [bold type]ACTIVATED //[roman type][paragraph break][italic type]Closing chamber.[paragraph break]Initiating cleaning sequence --- [roman type][bold type]BOOTING[roman type][paragraph break][roman type]".
+	say "[italic type]Seal Status: [bold type]ACTIVATED //[roman type][paragraph break][italic type]Closing chamber.[paragraph break]Checking contamination status --- [roman type][bold type]BOOTING[roman type][paragraph break][roman type]".
 
 [Rooms]
-The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment including the communication systems must have been fried and doesn't seem to work anymore.[paragraph break]There's only a single flickering light inside the [bold type]command panel[roman type].[paragraph break][italic type]What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first[roman type]." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
+The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment, including the communication systems, must have been fried and doesn't seem to work anymore.[paragraph break]There's only a single flickering light inside the [bold type]command panel[roman type].[paragraph break][italic type]What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first[roman type]." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
 	
-The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels but also your [bold type]locker[roman type] which possibly contains things you could really use in this kind of situation. Oh, and the [bold type]suit chamber[roman type] of course. It also looks like the airlock in the south doesn't seem to function anymore so perhaps I should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
+The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels but also your [bold type]locker[roman type] which possibly contains things you could really use in this kind of situation. Oh, and the [bold type]suit chamber[roman type] of course. It also looks like the airlock in the south doesn't seem to function anymore so perhaps you should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
 The Spaceship Exit_Kaldríss is a room. "The airlock also seems to be affected by the crash and the temperatures inside the spaceship are nearing dangerous levels. I could leave the spaceship right now by going east but I if I don't have something to protect me from the cold I will probably die." The printed name of the  Spaceship Exit_Kaldríss is "Spaceship Exit".
 The Crash Zone_Kaldríss is a room. "The surface of Kaldríss consists of spiky ice formations as far as the eye can see . No wonder nobody in his right mind would try to land here willingly. There doesn't seem to be anything of interest wherever you look. After taking a closer look you suddenly notice some sort of structure north of your position. If you hurry up you should be able to make it there before you freeze." The printed name of the Crash Zone_Kaldríss is "Crash Zone".
-The Hunting Grounds_Kaldríss is a room. "Turns out this used to be an explorer camp and you instantly feel a little less lonely and also more safe. Seems like a good place to stay for a while and trying not to freeze to death. But where did those explorers go and why did they leave pretty much everything behind? Further investigations of this place also reveal something resembling a cave entrance." The printed name of the Hunting Grounds_Kaldríss is "Hunting Grounds".
+The Hunting Grounds_Kaldríss is a room. "Turns out this used to be an explorer camp and you instantly feel a little less lonely and also more safe. Seems like a good place to stay for a while and try not to freeze to death. But where did those explorers go and why did they leave pretty much everything behind? Further investigations of this place also reveal something resembling a huge hole in the ground.[paragraph break]You make your way to said hole and realize it could be a cave entrance. The only problem is that there is a massive stone plate blocking the entrance." The printed name of the Hunting Grounds_Kaldríss is "Hunting Grounds".
 
 [Remove stone plate to enter cave]
 [Beschreibung von Yundar's Cave ohne stone plate!]
-The stone plate is above Yundar's Cave. The stone plate is a door. The stone plate is closed and openable.  The description of the stone plate is "This stone plate looks really heavy but if you manage to [bold type]shove it aside[roman type] just a little bit you should be able to get past it."
+The stone plate is above Yundar's Cave. The stone plate is a door. The stone plate is closed and openable.  The description of the stone plate is "This stone plate looks really heavy but if you manage to [bold type]shove it aside[roman type] just a little bit you should be able to get past it. You also can't help but notice letters carved into the plate. You probably should [bold type]examine[roman type] it once more."
 
-After examining the stone plate for the first time:
-	say "This stone plate looks really heavy but if I manage to [bold type]shove it aside[roman type] just a little bit I should be able to get past it. [paragraph break]You also notice two words carved into the stone plate.[paragraph break]YETÌSS[paragraph break]DANGER[paragraph break][italic type]Is this perhaps a warning? And who would something like that into a stone plate"
+Before examining the stone plate for the second time:
+	now the description is "You notice a single word carved into the stone plate.[paragraph break][bold type]YETÍSS[roman type][paragraph break][italic type]What is this supposed to mean? The answer probably lies behind this stone plate.[roman type]".
 
 
 [Stoneplate to Cave System]
@@ -1945,7 +2097,7 @@ After closing stone plate:
 	say "This thing is heavy! I was able to put it back in place though."
 
 Before opening the stone plate:
-	say "You managed to shove the stone plate ot ouf the way and you are able to make your way down this really dark and tight cave. Let's just hope nothing bad happens."
+	say "You manage to shove the stone plate ot ouf the way thus enabling you to finally [bold type]go down[roman type] and descend into this extremely dark and tight hole. Let's just hope nothing bad happens and that temperatures down there are a little higher than on the surface."
 	
 [Directions]
 The Spaceship Storage_Kaldríss is south of Spaceship Bridge_Kaldríss.
@@ -1962,6 +2114,10 @@ Before going to the Crash Zone_Kaldríss:
 		say "You can't leave the spaceship just yet. You need to find something to keep you warm before you venture off!";
 		stop the action.
 
+After going to the Crash Zone_Kaldríss:
+	say "Now that you found a way to stay warm you should be able to leave the spaceship without instantly freezing to death.";
+	continue the action.
+	
 [Variables]
 EnergyCapacitorReady is a truth state that varies. EnergyCapacitorReady is false.
 
@@ -1972,20 +2128,7 @@ After removing flux essence fragment from energy capacitor:
 	now EnergyCapacitorReady is false.
 
 
-CommandPanelOpen is a truth state that varies. CommandPanelOpen is false.
-
-After opening the command panel:
-	now CommandPanelOpen is true.
 	
-After closing the command panel:
-	now CommandPanelOpen is false.
-	
-After going to the Crash Zone_Kaldríss:
-	say "Now that you found a way to stay warm you should be able to leave the spaceship without instantly freezing to death.";
-	continue the action.
-
-
-
 
 
 Section 2 - Yetíss Cave System
@@ -1994,36 +2137,57 @@ Section 2 - Yetíss Cave System
 
 Yetíss Caves System is a region.  Main Cave_Kaldríss, Yundar's Cave, Yarwol's Cave and Secret Cave_Kaldríss is in Yetíss Caves System.
 
+[Images]
+Figure of Yarwol's Cave is the file "background_kaldriss.png".
+The room-illustration of Yarwol's Cave is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Main Cave_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Main Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Secret Cave_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Secret Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+
 [Rooms]
 [Yundar's Cave]
-Yundar's Cave is a room. "This is one of many caves which the Yetíss have built under the surface of Kaldríss. This one seems to belong to a young female Yetíss called Yundar.  It also connects to another cave if you go further in the east." The printed name of Yundar's Cave is "Cave".
+Yundar's Cave is a room.  The description of Yundar's Cave is "Since there is only a tiny amount of light in this cave it's hard to make out it's size and where to go.  Judging from the acoustics  though it seems as this is only one of many caves that are all part of some kind of underground cave system. You can also hear footsteps from time to time but they sound way heavier than the ones of regular human beings.  If you don't know where to go you could just try to follow the footsteps in the same direction. However, you should still be really careful when doing so since it's probably for the best if you stay undetected for now." The printed name of Yundar's Cave is "Cave Entrance".
 
-After going to Yundar's Cave for the first  time:
-	say "Upon trying to make your way into the small cave entrance you slipped and went all the way down. Apart from a few scratches here and there you seem to be okay even though your head hurts quite a lot. You can barely see from where you landed but you see light a little further ahead and decide to go there. It's getting easier to see with every step you take and suddenly you hear noises. It sounds like someone is .. talking? You can't really understand what they are saying since it seems to be some ancient language but you heard the words [italic type]Yundar[roman type] and [italic type]Yarwol[roman type] being thrown around a couple of times so maybe those are names? Perhaps it's even humans who live down here. Maybe it's one of the explorers from the camp above you. This would certainly explain where they went. notice outlines of a figure that seems to resemble a human since. The last thing you heard were footsteps heading east."
+After going to Yundar's Cave for the first  time:	
+	say "Upon trying to make your way into the small cave entrance you slipped and went all the way down. Apart from a few scratches here and there you seem to be okay even though your head hurts quite a lot. You can barely see from where you are but you see light a little further ahead and decide to go there. It's getting easier to see with every step you take and suddenly you hear noises. It sounds like someone is .. talking? You can't really understand what they are saying since it seems to be some ancient language but you heard the words [italic type]Yundar[roman type] and [italic type]Yarwol[roman type] being thrown around a couple of times so maybe those are names? Perhaps it's even humans who live down here. Maybe it's one of the explorers from the camp above you. The last thing you hear are footsteps heading east.[paragraph break]";
+	produce a room description with going spacing conventions.
+	
 
 [Yarwol's Cave]
-Yarwol's Cave is a room. "This cave is where Yarwol, the oldest Yetíss, resides. You wonder how many more of these caves exist. What if there are so many caves that you will get lost and never see daylight again? What if one of those creatures finds you and eats you for breakfast? You better drop that negativity and start figuring out how to escape this place." The printed name of Yarwol's Cave is "Cave".
+Yarwol's Cave is a room. "This cave is way smaller than the previous one. You start to wonder how many of these caves can be found down here. You might end up getting lost and never see daylight again. What if one of those creatures finds you and decides to eat you? I definitely don't want to die by getting eaten by whatever it is that lives down here. You better get going and figure out how to get out of here ASAP." The printed name of Yarwol's Cave is "Small Cave".
 
 After going to Yarwol's Cave for the first time:
-	say "You sneakily followed one of the mysterious creatures. Luckily nobody has noticed you. So far so good. Now it's time to find out how you could get out of here.  You take a look around this cave and notice these suspicious rocks. You can't help but feel like someone is trying to hide something behind them so probably you should try to very carefully shove them aside and see if your suspicions turn out to be true."
+	say "You sneakily followed one of the mysterious creatures. Luckily nobody has noticed you. So far so good. Now it's time to find out how you could get out of here. You take a look around this cave and notice these [bold type]suspicious rocks[roman type]. You can't help but feel like someone is trying to hide something inside them so probably you should try to very carefully [bold type]shove them aside[roman type] and see if you're right.";
+	produce a room description with going spacing conventions.
 
 
 [Main Cave]
-The Main Cave_Kaldríss is a room. "This is like the central cave that also acts as kind of a hub for all the Yetíss that live inside this cave system. Judging from the sheer size of it there must be hundreds of different caves down here." The printed name of the Main Cave_Kaldríss is "Cave".
+The Main Cave_Kaldríss is a room. "Alright, this is the biggest one yet. It seems to be a junction of some sort. It's not only the biggest cave you've encountered so far but there are also numerous tunnels leading away from it. It would probably interesting to find out where all those tunnels lead but it wouldn't be a smart decision to make in your current situation. You should better search for the nearest exit if there is any." The printed name of the Main Cave_Kaldríss is "Cave Junction".
 
 After going to the Main Cave_Kaldríss for the first time:
-	say "Looks like this is the cave that connects them all which also explains why it's that much bigger than the ones before.  You can also notice a tiny gap in the east wall. Directly next to it is a small hole in the wall that seems to have a very specific shape. It could be some kind of keyhole. If this assumption is true and this turns out to be a door of some kind then this might also be the way out of this cave system.".
+	say "Looks like this is the cave that connects them all which also explains why it's that much bigger than the ones before.  You can also notice a tiny [bold type]gap in the east wall[roman type]. Directly next to it is a small hole in the wall that seems to have a very specific shape. It could be some kind of keyhole. If this assumption is true and this turns out to be a door of some kind then this might also be the way out of this cave system.";
+	produce a room description with going spacing conventions.
 
 [Secret Cave]
-Secret Cave_Kaldríss is a room. "A secret cave that even most of the Yetíss don't know about. Only the ones worthy enough are allowed to enter." The printed name of the Secret Cave_Kaldríss is "Cave". 
+Secret Cave_Kaldríss is a room. "Who would've thought that there's a hidden cave in here? Apparently only a few selected creatures know of its existence. The rest of them are in the dark about it.[paragraph break][italic type]Hah[roman type][paragraph break]Anyway, there's a huge light beam in the middle of the cave that seems to able to transport you [bold type]up[roman type] to another place. How exactly this even works and where exactly this place might be is rather unimportant at the moment. Any place is better than this one. At least that's what you keep telling yourself." The printed name of the Secret Cave_Kaldríss is "Secret Cave". 
 
-Before going to Secret Cave_Kaldríss for the first time:
-	say "You fumble around with the keystone until it suddenly fits exactly into the hole next to the small gap in the wall. A mechanism activates and the gap begins to widen. As soon as it's wide enough so you can fit through yo go for it hoping that nobody will follow you. Getting past the Yetíss undetected wasn't easy but in the end you managed to do it and now it's finally time to find a way off this planet! I can see a light above me that seems to be leading to .. some place? I should probably follow it before I get lost in the void. [italic type][bold type]Beam me up![roman type]";
+After going to Secret Cave_Kaldríss for the first time:
+	say "You fumble around with the keystone until it suddenly fits exactly into the hole next to the small gap in the wall. A mechanism activates and the gap begins to widen. As soon as it's wide enough so you can fit through yo go for it hoping that nobody will follow. Getting past the Yetíss undetected wasn't easy but in the end you managed to do it and now it's finally time to find a way off this planet! You can see a light above you that seems to be leading [bold type]up[roman type] ..  to some place? You should probably follow it before you get lost in the void.[paragraph break][italic type][bold type]Beam me up![roman type][paragraph break][italic type]I always wanted to use that phrase - perhaps I should try it anyways and see what happens?[roman type][paragraph break]";
 	continue the action.
 
+
 [NPCs]
-Yundar is a woman in Yundar's Cave. The description of Yundar is "This specimen seems to be a younger specimens.  Looks chummy but at the same time terrifying to some extent."
-Yarwol is a man in Yarwol's Cave.  The description of Yarwol is "Seems like this is the leader or at least one of the more important Yetíss. This creature definitely has seen better days since it looks very old, ancient even. It's totally possible that it has been here for the past century if not longer."
+Yundar is a woman in Yundar's Cave. The description of Yundar is "This specimen seems to be one of the younger ones.  It definitely has huge resemblances with a Yeti. Who would've thought those really exist?[paragraph break][italic type]I shouldn't be looking at this creature for too long because it might notice me and who knows what it will do to me if it finds out that I am down here[roman type]."
+Yarwol is a man in Yarwol's Cave.  The description of Yarwol is "This one is a lot bigger and also scarier. Seems like it's also way older than the other one. You wonder for how long these creatures have been living down here. Decades? Centuries? Or even longer?[paragraph break][italic type]I probably don't waste too much time thinking about that and get going before someone or rather something notices me wandering around here[roman type]."
+
+
+
+
+
+
 
 [Beam me up, Scotty!]
 
@@ -2070,14 +2234,15 @@ if Yarwol is visible, say "Arggghhhhrrhrrhrhrhrrh"
 [Movement Restrictions]
 Instead of going to the Hunting Grounds_Kaldríss from Yundar's Cave:
 		move the player to Yundar's Cave, without printing a room description;
-		say "There's no way you can make it out of the cave this way. You will have to find another way.";
+		say "There's no chance you will be able to climp up this tight hole again. You will have to find another way.";
 		stop the action.
 
 [Directions]
 Hunting Grounds_Kaldríss is above stone plate.
 Yundar's Cave is west of Yarwol's Cave.
 Main Cave_Kaldríss is south of Yarwol's Cave.
-Secret Cave_Kaldríss is east of Main Cave_Kaldríss.
+Main Cave_Kaldríss is west of Secret Cave_Kaldríss.
+
 
 [Movement Restrictions]
 
@@ -2090,30 +2255,69 @@ Before going to the Secret Cave_Kaldríss:
 		
 [Items]
 
-In Yarwol's Cave is suspicious rocks. It is scenery. The suspicious rocks is an openable container in Yarwol's Cave. It is closed and openable. The description of the suspicious rocks is "A couple of rocks carefuly piled on top of each other. You could shove them aside and see what happens, right? What could possibly go wrong.". In the suspicious rocks is Yarwol's Keystone. Yarwol's Keystone can be taken. The description of Yarwol's Keystone is "An ancient keystone that apparently belongs to a Yetíss called Yarwol. What could this be used for?".
+In Yarwol's Cave is suspicious rocks.  It is fixed in place. The suspicious rocks is an openable container in Yarwol's Cave. It is closed and openable. The description of the suspicious rocks is "A couple of rocks carefuly piled on top of each other. You could [bold type]shove them aside[roman type] and see what happens, right? What could possibly go wrong?". In the suspicious rocks is Yarwol's Keystone. Yarwol's Keystone can be taken. The description of Yarwol's Keystone is "An ancient keystone that apparently belongs to a Yetíss called Yarwol. What could this be used for?".
+
+After opening suspicious rocks:
+	say "You carefully shoved aside the suspicious rocks, revealing Yarwol's Keystone.".
+
 Before taking Yarwol's Keystone:
 	say "This thing has a very weird shape but you should probably hold on to it for now since you never know when it might prove useful."
 
 After entering Secret Cave_Kaldríss:
 	remove Yarwol's Keystone from play.
 
+
+
+
+
+
+
+
+
 Section 4 - Blakkríss Temple
 
 [Region -  Blakkríss Temple]
 The Blakkríss Temple is a region. The Blakkríss Temple Entrance, the Great Hall_Kaldríss, the Spectral Bridge and the Bifröst Portal Chamber is in the Blakkríss Temple.
 
+[Images]
+Figure of Blakkríss Temple Entrance is the file "background_kaldriss.png".
+The room-illustration of Blakkríss Temple Entrance is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Great Hall_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Great Hall_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Spectral Bridge is the file "background_kaldriss.png".
+The room-illustration of Spectral Bridge is the Figure of Spaceship Bridge_Kaldríss.
+
+Figure of Portal Chamber is the file "background_kaldriss.png".
+The room-illustration of Portal Chamber is the Figure of Spaceship Bridge_Kaldríss.
+
 [Rooms]
 The Blakkríss Temple Entrance is a room. "This seems to be the entrance of a temple of some sort. It is really huge. Like really really huge. There are also ancient rune inscriptions on every single one of the pillars that make up this majestic entrance."
 
 After going to Blakkríss Temple Entrance for the first time:
-	say "[italic type]What the hell was that?[paragraph break]Everything turned white, I completely lost track of time and suddenly I stand in front of something that looks like a huge temple of some sort.[paragraph break]This must be it. This has to be the place which will be able to bring me and my spaceship back into the orbit.[paragraph break]I should get going before I waste any more precious time! [paragraph break]I think I should be good for now if I just keep going west.[roman type]"
+	say "[italic type]What the hell was that?[paragraph break]Everything turned white, I completely lost track of time and suddenly I stand in front of something that looks like a huge temple of some sort.[paragraph break]This must be it. This has to be the place which will be able to bring me and my spaceship back into the orbit.[paragraph break]I should get going before I waste any more precious time! [paragraph break]I think I should be good for now if I just keep going west.[roman type][paragraph break]";
+	produce a room description with going spacing conventions.
 
-The Great Hall_Kaldríss is a room. "This seems to be the focal point of the temple. Even more rune inscriptions on the walls. Well, I should just keep going into the same direction since I can see some weird light that is coming from a little further inside the temple." The printed name of Great Hall_Kaldríss is "Great Hall".
-The Spectral Bridge is a room. "A bridge that seems to purely consist of light that is emitted in all its different spectral colors. How does this make even sense? Only one way to find out. All I can do is keep following this path since I can't go anywhere else anyway."
-The Bifröst Portal Chamber is a room. "This must be the portal chamber! Finally! Time to calibrate the portal so I can get into the orbit ASAP."
+The Great Hall_Kaldríss is a room. "This seems to be the focal point of the temple. Even more rune inscriptions on the walls. Well, you should probably just keep going west since you can see some weird light that is coming from a little further inside the temple." The printed name of Great Hall_Kaldríss is "Great Hall".
 
+After going to Great Hall_Kaldríss for the first time:
+	say "You keep going straight forward making your way through this huge temple. At the same time you also begin thinking about who might have built this temple since the planet seemed pretty dead so far. With the exception of the Yetíss but it's highly unlikely this is their doing.";
+	produce a room description with going spacing conventions.
+
+The Spectral Bridge is a room. "A bridge that seems to purely consist of light that is emitted in all its different spectral colors.[paragraph break][italic type]How does this even make sense? Only one way to find out. All I can do is keep following this path leading west since I can't go anywhere else anyway[roman type]."
+
+After going to Spectral Bridge:
+	say "You seem to have finally made your way through the temple complex. Suddenly you stand in front of a bridge but it's translucent and doesn't look like anyone could ever cross it. It's hard to describe really since it seems to be made out of light if that makes any sense? You're not sure yet whether to attempt crossing it or just stay here for now.";
+	produce a room description with going spacing conventions.
+
+The Bifröst Portal Chamber is a room. "A mysterious room filled to the brim with ancient technology. The most important of those technologies being the portal in the middle of the chamber."
+
+After going to the Bifröst Portal Chamber for the first time:
+	say "[italic type]This must be the portal chamber! Finally! Time to calibrate the portal so I can get into the orbit ASAP![roman type]";
+	produce a room description with going spacing conventions.
 [Lore]
-The pillars is a thing inside the Blakkríss Temple Entrance. The description of Pillars is "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.". Pillars is scenery.
+The pillars is a thing inside the Blakkríss Temple Entrance. The description of Pillars is "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.[paragraph break][italic type]Why do I get the feeling that I've already read that somewhere?[roman type]". Pillars is fixed in place.
 
 
 [Directions]
@@ -2122,21 +2326,35 @@ The Blakkríss Temple Entrance is east of the Great Hall_Kaldríss.
 The Great Hall_Kaldríss is east of the Spectral Bridge.
 
 [NPCs]
-Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this place and never did I let anyone past my sword.".
+Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this [bold type]temple[roman type] and never did I let anyone past my sword. There is only one possible way this could end well. You have to solve my [bold type]riddle[roman type]."
 
 [Final Dialogue]
-After asking Heimdallr about "anything":
-	say "Wolololo."
-
 After asking Heimdallr about "portal chamber":
-	say "It's rare to see a mortal being up here. It must have been thousands of years ago the last time I encountered one of you lesser beings. It didn't end well for that poor creature."
+	say "[italic type]It's rare to see a mortal being up here. The last time I encountered one of you lesser beings must have been thousands of years ago.[paragraph break]It didn't end well for that poor creature.[roman type][paragraph break]"
 
-After asking heimdallr about "open sesame":
-	say "Clever! Really clever indeed.";
-	move player to the Portal Chamber.
+After asking Heimdallr about "temple":
+	say "[italic type]This temple was built right after the creation of this planet. It's only purpose is to protect this powerful portal that lies ahead.[paragraph break]It's unknown how powerful it exactly is but the more reason I guard it with my life.[roman type][paragraph break]"
+
+After asking Heimdallr about "riddle":
+	say "[italic type]All I want from you is the answer to life, the universe and everything. Can you figure it out?[roman type][paragraph break]"
+	
+After asking Heimdallr about "riddle" for the second time:
+	say "[italic type]The answer is really simple. Perhaps you just have [roman type][bold type]2 [roman type][italic type]think[roman type][bold type] 4 [roman type][italic type] a little longer?[roman type][paragraph break]"
+
+After asking Heimdallr about "2":
+	say "You are getting closer."
+	
+After asking Heimdallr about "4":
+	say "Halfway there."
+	
+After asking Heimdallr about "24":
+	say "Sometimes you have to twist something around in order to see the answer."
+	
+After asking heimdallr about "42":
+	say "[italic type]Clever! Really clever indeed. Nobody has ever figured out how to get past me. You seem to be one of a kind.[paragraph break] You shall pass![roman type][paragraph break]";
+	move player to the Bifröst Portal Chamber.
 
 [The End]
 
-After entering the Bifröst Portal Chamber :
-	end the story;
-	say "You did it!"
+After going to the Bifröst Portal Chamber for the first time:
+	end the story finally saying "You wake up lying in your bed on board of your spaceship. For a moment you thought that you were just having a bad dream but then you realize that only moments ago you've been on Kaldríss, one of the coldest planets in this solar system. You almost freezed to death, got lost in a cave that apparently is inhabited by Yetíss and then you talked to Heimdallr, some kind of ancient warden, that magically teleported you into a portal chamber. After that just blanks. You simply can't remember how you actually managed to get off this planet.[paragraph break][italic type]Was all of this really just a bad dream? Perhaps a result of all the bad things that recently happened to me on all the other planets I've visited, well, not willingly though.[paragraph break]But it felt so real? Maybe this is just the consequence of trying to calibrate ancient portal devices which I don't really know anything about.[paragraph break]On the other hand I should just be grateful that I'm still alive and that I have my spaceship back.[paragraph break]After all the stuff that has happened I should probably just leave this galaxy and head home. It might not be perfect but I should appreciate it for what it is.[paragraph break]It's still better than anything out here.".

@@ -1,20 +1,52 @@
 ! Blurb file created by Inform build 6M62
 
+<<<<<<< HEAD
 status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Build/StatusCblorb.html"
+=======
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
+>>>>>>> 09ee5fcc521f4bd9e3ab0889e7d00472f69c4eb2
 
 
 ! Identification
 
+<<<<<<< HEAD
 project folder "/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform"
 release to "/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.materials/Release"
+=======
+project folder "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform"
+release to "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Release"
+>>>>>>> 09ee5fcc521f4bd9e3ab0889e7d00472f69c4eb2
 
 ! Blorb instructions
 
 storyfile leafname "On the Lookout.gblorb"
+<<<<<<< HEAD
 storyfile "/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Build/output.ulx" include
 ifiction "/Users/kevinkoch/Documents/Scrum-2017v4/On the Lookout/On the Lookout.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+=======
+storyfile "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\output.ulx" include
+ifiction "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
+cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Small Cover.jpg"
+picture 3 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_frizza.png"
+picture 4 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 5 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 6 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 7 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 8 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 9 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 10 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 11 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 12 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 13 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 14 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 15 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 16 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+>>>>>>> 09ee5fcc521f4bd9e3ab0889e7d00472f69c4eb2
 
 ! Placeholder variables
 
@@ -31,9 +63,26 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "On the Lookout.gblorb.js"
+template path "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Templates"
+template path "D:\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.inform\Build\output.ulx" to "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Release\interpreter\On the Lookout.gblorb.js"
+
+! Website instructions
+
+template path "D:\Documents\Scrum-2017v4\On the Lookout\On the Lookout.materials\Templates"
+template path "D:\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line3"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc406.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
