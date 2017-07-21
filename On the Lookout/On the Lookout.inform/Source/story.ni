@@ -1233,11 +1233,19 @@ Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
-	Figure of Landing Zone_Frizza is the file "wallhaven-94691.jpg".
-	Figure of Upper Desert_Frizza is the file "Surface.png".
+	Figure of Frizza is the file "background_frizza.png".
 	
-	The room-illustration of Upper Desert_Frizza is the Figure of Upper Desert_Frizza.
-	The room-illustration of Landing Zone_Frizza is the Figure of Landing Zone_Frizza.
+	The room-illustration of Landing Zone_Frizza is the Figure of Frizza.
+	The room-illustration of Upper Desert_Frizza is the Figure of Frizza.
+	The room-illustration of Lower Desert_Frizza is the Figure of Frizza.
+	The room-illustration of Scoop_Frizza is the Figure of Frizza.
+	The room-illustration of Surface Flux_Frizza is the Figure of Frizza.
+	The room-illustration of Upper Gate_Frizza is the Figure of Frizza.
+	The room-illustration of Verge_Frizza is the Figure of Frizza.
+	The room-illustration of Surface Flux 2_Frizza is the Figure of Frizza.
+	The room-illustration of Ascent_Frizza is the Figure of Frizza.
+	The room-illustration of Flux Core_Frizza is the Figure of Frizza.
+	
 	
 [--]
 
