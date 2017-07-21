@@ -1,5 +1,6 @@
 "On the Lookout" by Daniel, Franziska, Tim, Kevin, Tobias
 
+
 [Anchor rooms Testsection]
 
 The Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are rooms. Anchors is a region. Anchor 1, Anchor 2, Anchor 3 and Anchor 4 are in the Anchors.
@@ -718,19 +719,6 @@ After taking food:
 After going to the landingzone_gaisetto:
 	if the player carries food:
 		say "finally you found somethink to eat and you leave the planet!".]
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
