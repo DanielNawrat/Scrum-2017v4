@@ -1871,25 +1871,71 @@ After asking Trapist about "Spaceship":
 	else:
 		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
 
+
+
 [
-[TO DO]
-
 [IN PROGRESS]
-
-- "End of Game" Text schreiben und so prpgrammieren, dass er am Spielende ausgegeben wird
-- Dialog mit Heimdallr erweitern (ggf. mit Response Table)
-- Instead of going nowhere from X (für jeden Raum einfügen)
-- Instead of taking (fixed objects; command panel, locker, suit chamber, rocks, pillars) say X
+- es wird keine Raumbeschreibung gedruckt, wenn man in die Spaceship Storage geht
 ]
 
 Chapter 5 - Kaldríss
 
 Section 1 - Crash Site
 
+[Extensions]
 [Map]
 Include Automap by Mark Tilford.
 
+[Images]
+Include Simple Graphical Window by Emily Short.
+Include Location Images by Emily Short.
+
+
+Figure of Spaceship Bridge_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Spaceship Bridge_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Spaceship Storage_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Spaceship Storage_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+
+Figure of Spaceship Exit_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Spaceship Exit_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Crash Zone_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Crash Zone_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Hunting Grounds_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Hunting Grounds_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Yundar's Cave is the file "background_kaldriss.png".
+The room-illustration of Yundar's Cave is the Figure of Spaceship Bridge_Kaldríss.
+		
+
 [Finding a way off the space ship]
+
+Axesto is a person. The Player is Axesto.
+
+[Global Error Message]
+[Items]
+Instead of taking command panel, say "Do you really wanna try to ruin your last chance of escaping this planet by ripping out the command panel?!".
+Instead of taking the locker, say "Not. gonna. happen.".
+Instead of taking the suit chamber, say "Better not try this since things could blow up due to the immense pressure inside the suit chamber.".
+Instead of taking the rocks, say "The Yetíss will probably notice if you steal those rocks. Better to leave them wherey they are.".
+Instead of taking pillars, say "You might be green but by far not as strong as the other green guy.  And less angry.".
+
+[Directions]
+Instead of going nowhere from Spaceship Bridge_Kaldríss, say "You don't want to run into one of the walls of your spaceship, do you?".
+Instead of going nowhere from Spaceship Storage_Kaldríss, say "There's only two directions you can go. Either south to the back of the ship or north to the bridge.".
+Instead of going nowhere from Spaceship Exit_Kaldríss, say "There's only one way. This is not the right one.".
+Instead of going nowhere from Crash Zone_Kaldríss, say "Seems like there is some kind of blizzard going on in this direction. It's absolutely not advised going there since you would probably die.".
+Instead of going nowhere from Hunting Grounds_Kaldríss, say "Seems like there is some kind of blizzard going on in this direction. It's absolutely not advised going there since you would probably die.".
+Instead of going nowhere from Yundar's Cave, say "It's way too dark and therefore too dangerous to go alone.".
+Instead of going nowhere from Yarwol's Cave, say "It's way too dark and therefore too dangerous to go alone.".
+Instead of going nowhere from Main Cave_Kaldríss, say "It's way too dark and therefore too dangerous to go alone.".
+Instead of going nowhere from Secret Cave_Kaldríss, say "The only way out of here would be through the door you came in.".
+Instead of going nowhere from Blakkríss Temple Entrance, say "This temple was built on a mountain which means the only way is straight through the temple.".
+Instead of going nowhere from Great Hall_Kaldríss, say "There are incredibly high walls on both sides. Your only option is to keep going west.".
+Instead of going nowhere from Spectral Bridge, say "Your only option is to cross this mystical bridge. Going in any oother direction would mean you falling off of it resulting in a painful death.".
+
 
 [Spacesuit with energy capacitor]
 A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
@@ -1943,9 +1989,6 @@ After taking the flux essence fragment for the first time:
 
 
 
-[Global Error Message]
-Instead of taking something that is fixed in place, say "You don't seem to be strong enough."
-Instead of going nowhere, say "You don't want to go there."
 
 
 
@@ -1955,14 +1998,6 @@ Instead of going nowhere, say "You don't want to go there."
 The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spaceship Storage_Kaldríss, the Spaceship Exit_Kaldríss, the Hunting Grounds_Kaldríss and the Crash Zone_Kaldríss are in Crash Site_Kaldríss. 
 
 
-[Images]
-Include Simple Graphical Window by Emily Short.
-Include Location Images by Emily Short.
-
-
-	Figure of Crash Zone_Kaldríss is the file "background_kaldriss.png".
-		
-	The room-illustration of Crash Zone_Kaldríss is the Figure of Crash Zone_Kaldríss.
 
 [Items]	
 [Hidden Items/Riddles]
@@ -2102,6 +2137,16 @@ Section 2 - Yetíss Cave System
 
 Yetíss Caves System is a region.  Main Cave_Kaldríss, Yundar's Cave, Yarwol's Cave and Secret Cave_Kaldríss is in Yetíss Caves System.
 
+[Images]
+Figure of Yarwol's Cave is the file "background_kaldriss.png".
+The room-illustration of Yarwol's Cave is the Figure of Spaceship Bridge_Kaldríss.
+		
+Figure of Main Cave_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Main Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Secret Cave_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Secret Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+
 [Rooms]
 [Yundar's Cave]
 Yundar's Cave is a room.  The description of Yundar's Cave is "Since there is only a tiny amount of light in this cave it's hard to make out it's size and where to go.  Judging from the acoustics  though it seems as this is only one of many caves that are all part of some kind of underground cave system. You can also hear footsteps from time to time but they sound way heavier than the ones of regular human beings.  If you don't know where to go you could just try to follow the footsteps in the same direction. However, you should still be really careful when doing so since it's probably for the best if you stay undetected for now." The printed name of Yundar's Cave is "Cave Entrance".
@@ -2234,6 +2279,19 @@ Section 4 - Blakkríss Temple
 [Region -  Blakkríss Temple]
 The Blakkríss Temple is a region. The Blakkríss Temple Entrance, the Great Hall_Kaldríss, the Spectral Bridge and the Bifröst Portal Chamber is in the Blakkríss Temple.
 
+[Images]
+Figure of Blakkríss Temple Entrance is the file "background_kaldriss.png".
+The room-illustration of Blakkríss Temple Entrance is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Great Hall_Kaldríss is the file "background_kaldriss.png".
+The room-illustration of Great Hall_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+	
+Figure of Spectral Bridge is the file "background_kaldriss.png".
+The room-illustration of Spectral Bridge is the Figure of Spaceship Bridge_Kaldríss.
+
+Figure of Portal Chamber is the file "background_kaldriss.png".
+The room-illustration of Portal Chamber is the Figure of Spaceship Bridge_Kaldríss.
+
 [Rooms]
 The Blakkríss Temple Entrance is a room. "This seems to be the entrance of a temple of some sort. It is really huge. Like really really huge. There are also ancient rune inscriptions on every single one of the pillars that make up this majestic entrance."
 
@@ -2268,18 +2326,33 @@ The Blakkríss Temple Entrance is east of the Great Hall_Kaldríss.
 The Great Hall_Kaldríss is east of the Spectral Bridge.
 
 [NPCs]
-Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this place and never did I let anyone past my sword.".
+Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this [bold type]temple[roman type] and never did I let anyone past my sword. There is only one possible way this could end well. You have to solve my [bold type]riddle[roman type]."
 
 [Final Dialogue]
-After asking Heimdallr about "anything":
-	say "Wolololo."
-
 After asking Heimdallr about "portal chamber":
-	say "It's rare to see a mortal being up here. It must have been thousands of years ago the last time I encountered one of you lesser beings. It didn't end well for that poor creature."
+	say "[italic type]It's rare to see a mortal being up here. The last time I encountered one of you lesser beings must have been thousands of years ago.[paragraph break]It didn't end well for that poor creature.[roman type][paragraph break]"
 
-After asking heimdallr about "open sesame":
-	say "Clever! Really clever indeed.";
-	move player to the Portal Chamber.
+After asking Heimdallr about "temple":
+	say "[italic type]This temple was built right after the creation of this planet. It's only purpose is to protect this powerful portal that lies ahead.[paragraph break]It's unknown how powerful it exactly is but the more reason I guard it with my life.[roman type][paragraph break]"
+
+After asking Heimdallr about "riddle":
+	say "[italic type]All I want from you is the answer to life, the universe and everything. Can you figure it out?[roman type][paragraph break]"
+	
+After asking Heimdallr about "riddle" for the second time:
+	say "[italic type]The answer is really simple. Perhaps you just have [roman type][bold type]2 [roman type][italic type]think[roman type][bold type] 4 [roman type][italic type] a little longer?[roman type][paragraph break]"
+
+After asking Heimdallr about "2":
+	say "You are getting closer."
+	
+After asking Heimdallr about "4":
+	say "Halfway there."
+	
+After asking Heimdallr about "24":
+	say "Sometimes you have to twist something around in order to see the answer."
+	
+After asking heimdallr about "42":
+	say "[italic type]Clever! Really clever indeed. Nobody has ever figured out how to get past me. You seem to be one of a kind.[paragraph break] You shall pass![roman type][paragraph break]";
+	move player to the Bifröst Portal Chamber.
 
 [The End]
 
